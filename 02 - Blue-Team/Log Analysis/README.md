@@ -39,55 +39,50 @@ Logs were exported from the systemd journal since Kali does not generate traditi
 
 ## Log Collection Commands
 
-sudo journalctl -n 200 > kali-journal.log
-sudo journalctl -n 500 > kali-syslog.log
-sudo journalctl | grep -Ei "sudo|ssh|login|authentication" > kali-auth.log
+- `sudo journalctl -n 200 > kali-journal.log`
+- `sudo journalctl -n 500 > kali-syslog.log`
+- `sudo journalctl | grep -Ei "sudo|ssh|login|authentication" > kali-auth.log`
 
-Analysis Performed :
+## Analysis Performed :
 
-Authentication Activity Review
-grep -Ei "sudo|ssh|login" kali-auth.log
-Reviewed privileged command usage and login activity.
+# Authentication Activity Review
+- `grep -Ei "sudo|ssh|login" kali-auth.log`
+- Reviewed privileged command usage and login activity.
 
-Activity aligned with legitimate administrative actions.
+# Activity aligned with legitimate administrative actions.
+- No suspicious authentication patterns detected.
 
-No suspicious authentication patterns detected.
+## System Errors and Warnings
+- `grep -Ei "error|failed|warning" kali-syslog.log`
+- Identified routine background warnings.
+- No security-impacting failures observed.
 
-System Errors and Warnings
+## Network-Related Events
+- `grep -Ei "network|eth0|dhcp|dns" kali-syslog.log`
+- Observed DHCP lease renewals and interface activity.
+- Events aligned with packet capture timing.
 
-grep -Ei "error|failed|warning" kali-syslog.log
-Identified routine background warnings.
+## Time-Based Correlation
+- Windows system operated in IST while Kali operated in EST.
 
-No security-impacting failures observed.
+- Baseline capture time:
+    - 1:29 PM IST ≈ 02:59 AM EST
 
-Network-Related Events
+- Logs were filtered using:
+    - `sudo journalctl --since "2026-01-08 02:45:00" --until "2026-01-08 03:15:00"`
 
-grep -Ei "network|eth0|dhcp|dns" kali-syslog.log
-Observed DHCP lease renewals and interface activity.
-
-Events aligned with packet capture timing.
-
-Time-Based Correlation
-Windows system operated in IST while Kali operated in EST.
-
-Baseline capture time:
-
-1:29 PM IST ≈ 02:59 AM EST
-
-Logs were filtered using:
-sudo journalctl --since "2026-01-08 02:45:00" --until "2026-01-08 03:15:00"
-
-Correlated event identified:
-sudo nmap -sS 192.168.15.2
-This confirms privileged execution of the network scan corresponding to PCAP evidence.
+- Correlated event identified:
+    - `sudo nmap -sS 192.168.15.2`
+    - This confirms privileged execution of the network scan corresponding to PCAP evidence.
 
 ## Timeline Summary
-Time (EST)	Event
-~02:53	Wireshark capture started
-~02:58	DHCP lease renewal
-~03:03	Nmap scan executed
-~03:03	Packet capture stopped
-~03:14	Network interface reconnected
+|Time(EST)|Event|
+|---------|-----|
+|02:53|Wireshark capture started|
+|02:58|DHCP lease renewal|
+|03:03|Nmap scan executed|
+|03:03|Packet capture stopped|
+|03:14|Network interface reconnected|
 
 ## Detection Perspective
 Logs validate attacker actions and timelines.

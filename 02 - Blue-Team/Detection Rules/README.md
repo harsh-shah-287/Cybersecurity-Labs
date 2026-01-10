@@ -60,9 +60,6 @@ If a single source IP sends TCP SYN packets to more than 10 unique destination p
 within a 60-second window and less than 30% of those connections complete a handshake,
 then raise a potential network scanning alert.
 
-yaml
-Copy code
-
 ---
 
 ## Example SIEM-Style Query (Conceptual)
@@ -73,9 +70,6 @@ index=network
 | where tcp_flags="SYN"
 | stats dc(dest_port) as unique_ports by src_ip
 | where unique_ports > 10
-
-yaml
-Copy code
 
 This demonstrates how packet metadata could be aggregated to identify scanning behavior.
 
@@ -104,6 +98,11 @@ Detection rules must be tuned to reduce unnecessary alerts.
 
 ---
 
+## Evidence
+  - `baseline-normal-traffic-v2.pcapng` and `scan-traffic.pcapng` (stored in `07 -    Evidences/Packet-captures/`)
+
+---
+
 ## Key Learnings
 
 - Detection rules are logical representations of attacker behavior.
@@ -111,8 +110,3 @@ Detection rules must be tuned to reduce unnecessary alerts.
 - False positives must always be evaluated.
 - Detection engineering bridges offensive and defensive operations.
 - Structured logic enables scalable monitoring.
-
----
-
-## Evidence
-  - `baseline-normal-traffic-v2.pcapng` and `scan-traffic.pcapng` (stored in `07 -    Evidences/Packet-captures/`)
