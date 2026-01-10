@@ -1,0 +1,856 @@
+Dec 29 04:21:07 kali systemd[1]: Listening on sshd-unix-local.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_UNIX Local).
+Dec 29 04:21:07 kali systemd[1]: Starting sshd-vsock.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_VSOCK)...
+Dec 29 04:21:07 kali systemd[1]: Listening on systemd-logind-varlink.socket - User Login Management Varlink Socket.
+Dec 29 04:21:07 kali systemd[1]: Listening on sshd-vsock.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_VSOCK).
+Dec 29 04:21:07 kali systemd[1]: Reached target ssh-access.target - SSH Access Available.
+Dec 29 04:21:08 kali systemd[1]: getty-static.service - getty on tty2-tty6 if dbus and logind are not available was skipped because of an unmet condition check (ConditionPathExists=!/usr/bin/dbus-daemon).
+Dec 29 04:21:08 kali systemd[1]: Starting regenerate-ssh-host-keys.service - Regenerate SSH host keys...
+Dec 29 04:21:08 kali systemd[1]: Starting systemd-logind.service - User Login Management...
+Dec 29 04:21:08 kali systemd-logind[1086]: New seat seat0.
+Dec 29 04:21:08 kali systemd-logind[1086]: Watching system buttons on /dev/input/event1 (Power Button)
+Dec 29 04:21:08 kali systemd-logind[1086]: Watching system buttons on /dev/input/event6 (VMware VMware Virtual USB Keyboard)
+Dec 29 04:21:08 kali systemd-logind[1086]: Watching system buttons on /dev/input/event0 (AT Translated Set 2 keyboard)
+Dec 29 04:21:08 kali systemd[1]: Started systemd-logind.service - User Login Management.
+Dec 29 04:21:08 kali ssh-keygen[1084]: ssh-keygen: generating new host keys: RSA ECDSA ED25519
+Dec 29 04:21:08 kali systemd[1]: regenerate-ssh-host-keys.service: Deactivated successfully.
+Dec 29 04:21:08 kali systemd[1]: Finished regenerate-ssh-host-keys.service - Regenerate SSH host keys.
+Dec 29 04:21:08 kali systemd[1]: Reached target getty.target - Login Prompts.
+Dec 29 04:21:12 kali systemd-logind[1086]: New session 'c1' of user 'lightdm' with class 'greeter' and type 'x11'.
+Dec 29 04:21:12 kali systemd-logind[1086]: New session '1' of user 'lightdm' with class 'manager-early' and type 'unspecified'.
+Dec 29 04:21:12 kali systemd[1201]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Dec 29 04:21:12 kali systemd[1201]: Starting ssh-agent.socket - OpenSSH Agent socket...
+Dec 29 04:21:12 kali systemd[1201]: Listening on ssh-agent.socket - OpenSSH Agent socket.
+Dec 29 04:21:12 kali systemd[1201]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Dec 29 04:21:12 kali systemd[1201]: Starting gcr-ssh-agent.socket - GCR ssh-agent wrapper...
+Dec 29 04:21:12 kali systemd[1201]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Dec 29 04:21:29 kali systemd-logind[1086]: Removed session c1.
+Dec 29 04:21:29 kali systemd-logind[1086]: New session '2' of user 'kali' with class 'user' and type 'x11'.
+Dec 29 04:21:29 kali systemd-logind[1086]: New session '3' of user 'kali' with class 'manager' and type 'unspecified'.
+Dec 29 04:21:29 kali systemd[1326]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Dec 29 04:21:29 kali systemd[1326]: Starting ssh-agent.socket - OpenSSH Agent socket...
+Dec 29 04:21:29 kali systemd[1326]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Dec 29 04:21:29 kali systemd[1326]: Starting gcr-ssh-agent.socket - GCR ssh-agent wrapper...
+Dec 29 04:21:29 kali systemd[1326]: Listening on ssh-agent.socket - OpenSSH Agent socket.
+Dec 29 04:21:29 kali systemd[1326]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Dec 29 04:21:29 kali lightdm[1302]: gkr-pam: unlocked login keyring
+Dec 29 04:21:30 kali gpg-agent[1476]: using fd 6 for ssh socket (/run/user/1000/gnupg/S.gpg-agent.ssh)
+Dec 29 04:21:30 kali gpg-agent[1476]: listening on: std=5 extra=3 browser=4 ssh=6
+Dec 29 04:21:30 kali gpg-agent[1481]: using fd 6 for ssh socket (/run/user/1000/gnupg/S.gpg-agent.ssh)
+Dec 29 04:21:30 kali gpg-agent[1481]: listening on: std=5 extra=3 browser=4 ssh=6
+Dec 29 04:21:33 kali polkitd[1083]: Registered Authentication Agent for unix-session:2 (system bus name :1.45 [/usr/libexec/polkit-mate-authentication-agent-1], object path /org/mate/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Dec 29 04:21:45 kali systemd[1201]: Closed gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Dec 29 04:21:45 kali systemd[1201]: Stopping gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Dec 29 04:21:45 kali systemd[1201]: Stopping ssh-agent.socket - OpenSSH Agent socket...
+Dec 29 04:21:45 kali systemd[1201]: Closed gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Dec 29 04:21:45 kali systemd[1201]: Closed ssh-agent.socket - OpenSSH Agent socket.
+Dec 29 04:21:45 kali systemd-logind[1086]: Removed session 1.
+Dec 29 04:35:17 kali sudo[3962]: pam_unix(sudo:auth): conversation failed
+Dec 29 04:35:17 kali sudo[3962]: pam_unix(sudo:auth): auth could not identify password for [kali]
+Dec 29 04:41:30 kali sudo[11348]: pam_unix(sudo:auth): authentication failure; logname=kali uid=1000 euid=0 tty=/dev/pts/0 ruser=kali rhost=  user=kali
+Dec 29 04:42:00 kali sudo[11348]: pam_unix(sudo:auth): conversation failed
+Dec 29 04:42:00 kali sudo[11348]: pam_unix(sudo:auth): auth could not identify password for [kali]
+Dec 29 04:42:00 kali sudo[11348]:     kali : 2 incorrect password attempts ; TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/apt update
+Dec 30 00:25:40 kali systemd[1]: Listening on sshd-unix-local.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_UNIX Local).
+Dec 30 00:25:40 kali systemd[1]: Starting sshd-vsock.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_VSOCK)...
+Dec 30 00:25:40 kali systemd[1]: Listening on systemd-logind-varlink.socket - User Login Management Varlink Socket.
+Dec 30 00:25:40 kali systemd[1]: Listening on sshd-vsock.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_VSOCK).
+Dec 30 00:25:40 kali systemd[1]: Reached target ssh-access.target - SSH Access Available.
+Dec 30 00:25:40 kali systemd[1]: getty-static.service - getty on tty2-tty6 if dbus and logind are not available was skipped because of an unmet condition check (ConditionPathExists=!/usr/bin/dbus-daemon).
+Dec 30 00:25:40 kali systemd[1]: regenerate-ssh-host-keys.service - Regenerate SSH host keys was skipped because of an unmet condition check (ConditionPathExistsGlob=!/etc/ssh/ssh_host_*_key).
+Dec 30 00:25:40 kali systemd[1]: Starting systemd-logind.service - User Login Management...
+Dec 30 00:25:41 kali systemd-logind[747]: New seat seat0.
+Dec 30 00:25:41 kali systemd[1]: Started systemd-logind.service - User Login Management.
+Dec 30 00:25:42 kali systemd[1]: Reached target getty.target - Login Prompts.
+Dec 30 00:25:42 kali systemd-logind[747]: Watching system buttons on /dev/input/event1 (Power Button)
+Dec 30 00:25:42 kali systemd-logind[747]: Watching system buttons on /dev/input/event0 (AT Translated Set 2 keyboard)
+Dec 30 00:25:42 kali systemd-logind[747]: Watching system buttons on /dev/input/event6 (VMware VMware Virtual USB Keyboard)
+Dec 30 00:25:44 kali systemd-logind[747]: New session 'c1' of user 'lightdm' with class 'greeter' and type 'x11'.
+Dec 30 00:25:44 kali systemd-logind[747]: New session '1' of user 'lightdm' with class 'manager-early' and type 'unspecified'.
+Dec 30 00:25:45 kali systemd[1225]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Dec 30 00:25:45 kali systemd[1225]: Starting ssh-agent.socket - OpenSSH Agent socket...
+Dec 30 00:25:45 kali systemd[1225]: Listening on ssh-agent.socket - OpenSSH Agent socket.
+Dec 30 00:25:45 kali systemd[1225]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Dec 30 00:25:45 kali systemd[1225]: Starting gcr-ssh-agent.socket - GCR ssh-agent wrapper...
+Dec 30 00:25:45 kali systemd[1225]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Dec 30 00:26:04 kali systemd-logind[747]: Removed session c1.
+Dec 30 00:26:04 kali systemd-logind[747]: New session '2' of user 'kali' with class 'user' and type 'x11'.
+Dec 30 00:26:04 kali systemd-logind[747]: New session '3' of user 'kali' with class 'manager' and type 'unspecified'.
+Dec 30 00:26:04 kali systemd[1353]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Dec 30 00:26:04 kali systemd[1353]: Starting ssh-agent.socket - OpenSSH Agent socket...
+Dec 30 00:26:04 kali systemd[1353]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Dec 30 00:26:04 kali systemd[1353]: Starting gcr-ssh-agent.socket - GCR ssh-agent wrapper...
+Dec 30 00:26:04 kali systemd[1353]: Listening on ssh-agent.socket - OpenSSH Agent socket.
+Dec 30 00:26:04 kali systemd[1353]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Dec 30 00:26:04 kali lightdm[1326]: gkr-pam: unlocked login keyring
+Dec 30 00:26:05 kali gpg-agent[1501]: using fd 5 for ssh socket (/run/user/1000/gnupg/S.gpg-agent.ssh)
+Dec 30 00:26:05 kali gpg-agent[1501]: listening on: std=6 extra=4 browser=3 ssh=5
+Dec 30 00:26:05 kali gpg-agent[1506]: using fd 5 for ssh socket (/run/user/1000/gnupg/S.gpg-agent.ssh)
+Dec 30 00:26:05 kali gpg-agent[1506]: listening on: std=6 extra=4 browser=3 ssh=5
+Dec 30 00:26:07 kali polkitd[721]: Registered Authentication Agent for unix-session:2 (system bus name :1.46 [/usr/libexec/polkit-mate-authentication-agent-1], object path /org/mate/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Dec 30 00:26:20 kali systemd[1225]: Closed gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Dec 30 00:26:20 kali systemd[1225]: Stopping gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Dec 30 00:26:20 kali systemd[1225]: Stopping ssh-agent.socket - OpenSSH Agent socket...
+Dec 30 00:26:20 kali systemd[1225]: Closed gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Dec 30 00:26:20 kali systemd[1225]: Closed ssh-agent.socket - OpenSSH Agent socket.
+Dec 30 00:26:20 kali systemd-logind[747]: Removed session 1.
+Dec 30 01:53:39 kali systemd[1]: Listening on sshd-unix-local.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_UNIX Local).
+Dec 30 01:53:39 kali systemd[1]: Starting sshd-vsock.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_VSOCK)...
+Dec 30 01:53:39 kali systemd[1]: Listening on systemd-logind-varlink.socket - User Login Management Varlink Socket.
+Dec 30 01:53:39 kali systemd[1]: Listening on sshd-vsock.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_VSOCK).
+Dec 30 01:53:39 kali systemd[1]: Reached target ssh-access.target - SSH Access Available.
+Dec 30 01:53:39 kali systemd[1]: getty-static.service - getty on tty2-tty6 if dbus and logind are not available was skipped because of an unmet condition check (ConditionPathExists=!/usr/bin/dbus-daemon).
+Dec 30 01:53:39 kali systemd[1]: regenerate-ssh-host-keys.service - Regenerate SSH host keys was skipped because of an unmet condition check (ConditionPathExistsGlob=!/etc/ssh/ssh_host_*_key).
+Dec 30 01:53:39 kali systemd[1]: Starting systemd-logind.service - User Login Management...
+Dec 30 01:53:40 kali systemd-logind[576]: New seat seat0.
+Dec 30 01:53:40 kali systemd[1]: Started systemd-logind.service - User Login Management.
+Dec 30 01:53:41 kali systemd-logind[576]: Watching system buttons on /dev/input/event1 (Power Button)
+Dec 30 01:53:41 kali systemd-logind[576]: Watching system buttons on /dev/input/event0 (AT Translated Set 2 keyboard)
+Dec 30 01:53:41 kali systemd-logind[576]: Watching system buttons on /dev/input/event5 (VMware VMware Virtual USB Keyboard)
+Dec 30 01:53:41 kali systemd[1]: Reached target getty.target - Login Prompts.
+Dec 30 01:53:46 kali systemd-logind[576]: New session 'c1' of user 'lightdm' with class 'greeter' and type 'x11'.
+Dec 30 01:53:46 kali systemd-logind[576]: New session '1' of user 'lightdm' with class 'manager-early' and type 'unspecified'.
+Dec 30 01:53:46 kali systemd[1032]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Dec 30 01:53:46 kali systemd[1032]: Starting ssh-agent.socket - OpenSSH Agent socket...
+Dec 30 01:53:46 kali systemd[1032]: Listening on ssh-agent.socket - OpenSSH Agent socket.
+Dec 30 01:53:46 kali systemd[1032]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Dec 30 01:53:46 kali systemd[1032]: Starting gcr-ssh-agent.socket - GCR ssh-agent wrapper...
+Dec 30 01:53:46 kali systemd[1032]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Dec 30 01:53:59 kali systemd-logind[576]: Removed session c1.
+Dec 30 01:53:59 kali systemd-logind[576]: New session '2' of user 'kali' with class 'user' and type 'x11'.
+Dec 30 01:53:59 kali systemd-logind[576]: New session '3' of user 'kali' with class 'manager' and type 'unspecified'.
+Dec 30 01:53:59 kali systemd[1157]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Dec 30 01:53:59 kali systemd[1157]: Starting ssh-agent.socket - OpenSSH Agent socket...
+Dec 30 01:53:59 kali systemd[1157]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Dec 30 01:53:59 kali systemd[1157]: Starting gcr-ssh-agent.socket - GCR ssh-agent wrapper...
+Dec 30 01:53:59 kali systemd[1157]: Listening on ssh-agent.socket - OpenSSH Agent socket.
+Dec 30 01:53:59 kali systemd[1157]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Dec 30 01:53:59 kali lightdm[1133]: gkr-pam: unlocked login keyring
+Dec 30 01:54:00 kali gpg-agent[1305]: using fd 4 for ssh socket (/run/user/1000/gnupg/S.gpg-agent.ssh)
+Dec 30 01:54:00 kali gpg-agent[1305]: listening on: std=5 extra=3 browser=6 ssh=4
+Dec 30 01:54:00 kali gpg-agent[1310]: using fd 4 for ssh socket (/run/user/1000/gnupg/S.gpg-agent.ssh)
+Dec 30 01:54:00 kali gpg-agent[1310]: listening on: std=5 extra=3 browser=6 ssh=4
+Dec 30 01:54:02 kali polkitd[571]: Registered Authentication Agent for unix-session:2 (system bus name :1.46 [/usr/libexec/polkit-mate-authentication-agent-1], object path /org/mate/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Dec 30 01:54:09 kali systemd[1032]: Closed gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Dec 30 01:54:09 kali systemd[1032]: Stopping gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Dec 30 01:54:09 kali systemd[1032]: Stopping ssh-agent.socket - OpenSSH Agent socket...
+Dec 30 01:54:09 kali systemd[1032]: Closed gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Dec 30 01:54:09 kali systemd[1032]: Closed ssh-agent.socket - OpenSSH Agent socket.
+Dec 30 01:54:09 kali systemd-logind[576]: Removed session 1.
+Dec 30 01:55:21 kali sudo[2315]: pam_unix(sudo:auth): authentication failure; logname=kali uid=1000 euid=0 tty=/dev/pts/0 ruser=kali rhost=  user=kali
+Dec 30 01:56:49 kali sudo[2315]: pam_unix(sudo:auth): conversation failed
+Dec 30 01:56:49 kali sudo[2315]: pam_unix(sudo:auth): auth could not identify password for [kali]
+Dec 30 01:56:49 kali sudo[2315]:     kali : 1 incorrect password attempt ; TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/apt update
+Dec 30 02:00:51 kali sudo[3839]: pam_unix(sudo:auth): conversation failed
+Dec 30 02:00:51 kali sudo[3839]: pam_unix(sudo:auth): auth could not identify password for [kali]
+Dec 30 02:02:52 kali sudo[5831]: pam_unix(sudo:auth): conversation failed
+Dec 30 02:02:52 kali sudo[5831]: pam_unix(sudo:auth): auth could not identify password for [kali]
+Dec 30 02:04:15 kali sudo[6705]: pam_unix(sudo:auth): authentication failure; logname=kali uid=1000 euid=0 tty=/dev/pts/0 ruser=kali rhost=  user=kali
+Dec 30 02:05:32 kali sudo[6705]: pam_unix(sudo:auth): conversation failed
+Dec 30 02:05:32 kali sudo[6705]: pam_unix(sudo:auth): auth could not identify password for [kali]
+Dec 30 02:05:32 kali sudo[6705]:     kali : 1 incorrect password attempt ; TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=validate
+Dec 30 02:05:33 kali systemd-logind[576]: The system will reboot now!
+Dec 30 02:05:33 kali systemd-logind[576]: System is rebooting.
+Dec 30 02:05:33 kali systemd[1]: Stopped target getty.target - Login Prompts.
+Dec 30 02:05:33 kali systemd[1]: Stopped target ssh-access.target - SSH Access Available.
+Dec 30 02:05:33 kali ssh-agent[1301]: exiting on signal 15
+Dec 30 02:05:33 kali polkitd[571]: Unregistered Authentication Agent for unix-session:2 (system bus name :1.46, object path /org/mate/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+Dec 30 02:05:33 kali systemd-logind[576]: Removed session 2.
+Dec 30 02:05:33 kali systemd[1157]: Closed gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Dec 30 02:05:33 kali systemd[1157]: Stopping gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Dec 30 02:05:33 kali systemd[1157]: Stopping ssh-agent.socket - OpenSSH Agent socket...
+Dec 30 02:05:33 kali systemd[1157]: Closed gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Dec 30 02:05:33 kali systemd[1157]: Closed ssh-agent.socket - OpenSSH Agent socket.
+Dec 30 02:05:33 kali systemd-logind[576]: Removed session 3.
+Dec 30 02:05:34 kali systemd[1]: Stopping systemd-logind.service - User Login Management...
+Dec 30 02:05:34 kali systemd[1]: systemd-logind.service: Deactivated successfully.
+Dec 30 02:05:34 kali systemd[1]: Stopped systemd-logind.service - User Login Management.
+Dec 30 02:05:34 kali systemd[1]: sshd-unix-local.socket: Deactivated successfully.
+Dec 30 02:05:34 kali systemd[1]: Closed sshd-unix-local.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_UNIX Local).
+Dec 30 02:05:34 kali systemd[1]: Stopping sshd-vsock.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_VSOCK)...
+Dec 30 02:05:34 kali systemd[1]: systemd-logind-varlink.socket: Deactivated successfully.
+Dec 30 02:05:34 kali systemd[1]: Closed systemd-logind-varlink.socket - User Login Management Varlink Socket.
+Dec 30 02:05:34 kali systemd[1]: sshd-vsock.socket: Deactivated successfully.
+Dec 30 02:05:34 kali systemd[1]: Closed sshd-vsock.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_VSOCK).
+Dec 30 02:05:51 kali systemd[1]: Listening on sshd-unix-local.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_UNIX Local).
+Dec 30 02:05:51 kali systemd[1]: Starting sshd-vsock.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_VSOCK)...
+Dec 30 02:05:51 kali systemd[1]: Listening on systemd-logind-varlink.socket - User Login Management Varlink Socket.
+Dec 30 02:05:51 kali systemd[1]: Listening on sshd-vsock.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_VSOCK).
+Dec 30 02:05:51 kali systemd[1]: Reached target ssh-access.target - SSH Access Available.
+Dec 30 02:05:51 kali systemd[1]: getty-static.service - getty on tty2-tty6 if dbus and logind are not available was skipped because of an unmet condition check (ConditionPathExists=!/usr/bin/dbus-daemon).
+Dec 30 02:05:51 kali systemd[1]: regenerate-ssh-host-keys.service - Regenerate SSH host keys was skipped because of an unmet condition check (ConditionPathExistsGlob=!/etc/ssh/ssh_host_*_key).
+Dec 30 02:05:51 kali systemd[1]: Starting systemd-logind.service - User Login Management...
+Dec 30 02:05:52 kali systemd-logind[618]: New seat seat0.
+Dec 30 02:05:52 kali systemd[1]: Started systemd-logind.service - User Login Management.
+Dec 30 02:05:52 kali systemd[1]: Reached target getty.target - Login Prompts.
+Dec 30 02:05:53 kali systemd-logind[618]: Watching system buttons on /dev/input/event0 (AT Translated Set 2 keyboard)
+Dec 30 02:05:53 kali systemd-logind[618]: Watching system buttons on /dev/input/event1 (Power Button)
+Dec 30 02:05:53 kali systemd-logind[618]: Watching system buttons on /dev/input/event5 (VMware VMware Virtual USB Keyboard)
+Dec 30 02:05:53 kali systemd-logind[618]: New session 'c1' of user 'lightdm' with class 'greeter' and type 'x11'.
+Dec 30 02:05:53 kali systemd-logind[618]: New session '1' of user 'lightdm' with class 'manager-early' and type 'unspecified'.
+Dec 30 02:05:54 kali systemd[788]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Dec 30 02:05:54 kali systemd[788]: Starting ssh-agent.socket - OpenSSH Agent socket...
+Dec 30 02:05:54 kali systemd[788]: Listening on ssh-agent.socket - OpenSSH Agent socket.
+Dec 30 02:05:54 kali systemd[788]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Dec 30 02:05:54 kali systemd[788]: Starting gcr-ssh-agent.socket - GCR ssh-agent wrapper...
+Dec 30 02:05:54 kali systemd[788]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Dec 30 02:06:48 kali systemd-logind[618]: Removed session c1.
+Dec 30 02:06:48 kali systemd-logind[618]: New session '2' of user 'kali' with class 'user' and type 'x11'.
+Dec 30 02:06:48 kali systemd-logind[618]: New session '3' of user 'kali' with class 'manager' and type 'unspecified'.
+Dec 30 02:06:49 kali systemd[916]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Dec 30 02:06:49 kali systemd[916]: Starting ssh-agent.socket - OpenSSH Agent socket...
+Dec 30 02:06:49 kali systemd[916]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Dec 30 02:06:49 kali systemd[916]: Starting gcr-ssh-agent.socket - GCR ssh-agent wrapper...
+Dec 30 02:06:49 kali systemd[916]: Listening on ssh-agent.socket - OpenSSH Agent socket.
+Dec 30 02:06:49 kali systemd[916]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Dec 30 02:06:49 kali lightdm[892]: gkr-pam: unlocked login keyring
+Dec 30 02:06:49 kali gpg-agent[1064]: using fd 3 for ssh socket (/run/user/1000/gnupg/S.gpg-agent.ssh)
+Dec 30 02:06:49 kali gpg-agent[1064]: listening on: std=6 extra=5 browser=4 ssh=3
+Dec 30 02:06:49 kali gpg-agent[1069]: using fd 3 for ssh socket (/run/user/1000/gnupg/S.gpg-agent.ssh)
+Dec 30 02:06:49 kali gpg-agent[1069]: listening on: std=6 extra=5 browser=4 ssh=3
+Dec 30 02:06:51 kali polkitd[617]: Registered Authentication Agent for unix-session:2 (system bus name :1.44 [/usr/libexec/polkit-mate-authentication-agent-1], object path /org/mate/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Dec 30 02:06:58 kali systemd[788]: Closed gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Dec 30 02:06:58 kali systemd[788]: Stopping gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Dec 30 02:06:58 kali systemd[788]: Stopping ssh-agent.socket - OpenSSH Agent socket...
+Dec 30 02:06:58 kali systemd[788]: Closed gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Dec 30 02:06:58 kali systemd[788]: Closed ssh-agent.socket - OpenSSH Agent socket.
+Dec 30 02:06:58 kali systemd-logind[618]: Removed session 1.
+Dec 30 02:13:32 kali systemd-logind[618]: The system will reboot now!
+Dec 30 02:13:32 kali systemd-logind[618]: System is rebooting.
+Dec 30 02:13:32 kali ssh-agent[1060]: exiting on signal 15
+Dec 30 02:13:32 kali systemd[1]: Stopped target getty.target - Login Prompts.
+Dec 30 02:13:32 kali systemd[1]: Stopped target ssh-access.target - SSH Access Available.
+Dec 30 02:13:32 kali polkitd[617]: Unregistered Authentication Agent for unix-session:2 (system bus name :1.44, object path /org/mate/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+Dec 30 02:13:32 kali systemd-logind[618]: Removed session 2.
+Dec 30 02:13:33 kali systemd[916]: Closed gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Dec 30 02:13:33 kali systemd[916]: Stopping gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Dec 30 02:13:33 kali systemd[916]: Stopping ssh-agent.socket - OpenSSH Agent socket...
+Dec 30 02:13:33 kali systemd[916]: Closed gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Dec 30 02:13:33 kali systemd[916]: Closed ssh-agent.socket - OpenSSH Agent socket.
+Dec 30 02:13:33 kali systemd-logind[618]: Removed session 3.
+Dec 30 02:13:33 kali systemd[1]: Stopping systemd-logind.service - User Login Management...
+Dec 30 02:13:33 kali systemd[1]: systemd-logind.service: Deactivated successfully.
+Dec 30 02:13:33 kali systemd[1]: Stopped systemd-logind.service - User Login Management.
+Dec 30 02:13:34 kali systemd[1]: sshd-unix-local.socket: Deactivated successfully.
+Dec 30 02:13:34 kali systemd[1]: Closed sshd-unix-local.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_UNIX Local).
+Dec 30 02:13:34 kali systemd[1]: Stopping sshd-vsock.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_VSOCK)...
+Dec 30 02:13:34 kali systemd[1]: systemd-logind-varlink.socket: Deactivated successfully.
+Dec 30 02:13:34 kali systemd[1]: Closed systemd-logind-varlink.socket - User Login Management Varlink Socket.
+Dec 30 02:13:34 kali systemd[1]: sshd-vsock.socket: Deactivated successfully.
+Dec 30 02:13:34 kali systemd[1]: Closed sshd-vsock.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_VSOCK).
+Dec 30 02:13:52 kali systemd[1]: Listening on systemd-logind-varlink.socket - User Login Management Varlink Socket.
+Dec 30 02:13:52 kali systemd[1]: getty-static.service - getty on tty2-tty6 if dbus and logind are not available was skipped because of an unmet condition check (ConditionPathExists=!/usr/bin/dbus-daemon).
+Dec 30 02:13:52 kali systemd[1]: regenerate-ssh-host-keys.service - Regenerate SSH host keys was skipped because of an unmet condition check (ConditionPathExistsGlob=!/etc/ssh/ssh_host_*_key).
+Dec 30 02:13:52 kali systemd[1]: Starting systemd-logind.service - User Login Management...
+Dec 30 02:13:52 kali systemd-logind[587]: New seat seat0.
+Dec 30 02:13:52 kali systemd[1]: Started systemd-logind.service - User Login Management.
+Dec 30 02:13:53 kali systemd[1]: Reached target getty.target - Login Prompts.
+Dec 30 02:13:53 kali systemd-logind[587]: Watching system buttons on /dev/input/event0 (AT Translated Set 2 keyboard)
+Dec 30 02:13:53 kali systemd-logind[587]: Watching system buttons on /dev/input/event1 (Power Button)
+Dec 30 02:13:53 kali systemd-logind[587]: Watching system buttons on /dev/input/event5 (VMware VMware Virtual USB Keyboard)
+Dec 30 02:13:55 kali systemd-logind[587]: New session 'c1' of user 'lightdm' with class 'greeter' and type 'x11'.
+Dec 30 02:13:55 kali systemd-logind[587]: New session '1' of user 'lightdm' with class 'manager-early' and type 'unspecified'.
+Dec 30 02:13:55 kali systemd[788]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Dec 30 02:13:55 kali systemd[788]: Starting ssh-agent.socket - OpenSSH Agent socket...
+Dec 30 02:13:55 kali systemd[788]: Listening on ssh-agent.socket - OpenSSH Agent socket.
+Dec 30 02:13:55 kali systemd[788]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Dec 30 02:13:55 kali systemd[788]: Starting gcr-ssh-agent.socket - GCR ssh-agent wrapper...
+Dec 30 02:13:55 kali systemd[788]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Dec 30 02:14:45 kali login[887]: pam_unix(login:auth): authentication failure; logname= uid=0 euid=0 tty=/dev/tty2 ruser= rhost=  user=kali
+Dec 30 02:14:48 kali login[887]: FAILED LOGIN 1 FROM tty2 FOR kali, Authentication failure
+Dec 30 02:14:51 kali login[887]: pam_unix(login:auth): check pass; user unknown
+Dec 30 02:14:51 kali login[887]: pam_unix(login:auth): authentication failure; logname= uid=0 euid=0 tty=/dev/tty2 ruser= rhost=
+Dec 30 02:14:55 kali login[887]: FAILED LOGIN 2 FROM tty2 FOR , Authentication failure
+Dec 30 04:30:43 kali systemd[1]: Listening on sshd-unix-local.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_UNIX Local).
+Dec 30 04:30:43 kali systemd[1]: Starting sshd-vsock.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_VSOCK)...
+Dec 30 04:30:43 kali systemd[1]: Listening on systemd-logind-varlink.socket - User Login Management Varlink Socket.
+Dec 30 04:30:43 kali systemd[1]: Listening on sshd-vsock.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_VSOCK).
+Dec 30 04:30:43 kali systemd[1]: Reached target ssh-access.target - SSH Access Available.
+Dec 30 04:30:43 kali systemd[1]: getty-static.service - getty on tty2-tty6 if dbus and logind are not available was skipped because of an unmet condition check (ConditionPathExists=!/usr/bin/dbus-daemon).
+Dec 30 04:30:44 kali systemd[1]: regenerate-ssh-host-keys.service - Regenerate SSH host keys was skipped because of an unmet condition check (ConditionPathExistsGlob=!/etc/ssh/ssh_host_*_key).
+Dec 30 04:30:44 kali systemd[1]: Starting systemd-logind.service - User Login Management...
+Dec 30 04:30:44 kali systemd-logind[592]: New seat seat0.
+Dec 30 04:30:44 kali systemd[1]: Started systemd-logind.service - User Login Management.
+Dec 30 04:30:45 kali systemd[1]: Reached target getty.target - Login Prompts.
+Dec 30 04:30:45 kali systemd-logind[592]: Watching system buttons on /dev/input/event1 (Power Button)
+Dec 30 04:30:45 kali systemd-logind[592]: Watching system buttons on /dev/input/event0 (AT Translated Set 2 keyboard)
+Dec 30 04:30:45 kali systemd-logind[592]: Watching system buttons on /dev/input/event5 (VMware VMware Virtual USB Keyboard)
+Dec 30 04:30:48 kali systemd-logind[592]: New session 'c1' of user 'lightdm' with class 'greeter' and type 'x11'.
+Dec 30 04:30:48 kali systemd-logind[592]: New session '1' of user 'lightdm' with class 'manager-early' and type 'unspecified'.
+Dec 30 04:30:48 kali systemd[1027]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Dec 30 04:30:48 kali systemd[1027]: Starting ssh-agent.socket - OpenSSH Agent socket...
+Dec 30 04:30:48 kali systemd[1027]: Listening on ssh-agent.socket - OpenSSH Agent socket.
+Dec 30 04:30:48 kali systemd[1027]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Dec 30 04:30:48 kali systemd[1027]: Starting gcr-ssh-agent.socket - GCR ssh-agent wrapper...
+Dec 30 04:30:48 kali systemd[1027]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Dec 30 04:31:01 kali systemd-logind[592]: Removed session c1.
+Dec 30 04:31:01 kali systemd-logind[592]: New session '2' of user 'kali' with class 'user' and type 'x11'.
+Dec 30 04:31:01 kali systemd-logind[592]: New session '3' of user 'kali' with class 'manager' and type 'unspecified'.
+Dec 30 04:31:01 kali systemd[1151]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Dec 30 04:31:01 kali systemd[1151]: Starting ssh-agent.socket - OpenSSH Agent socket...
+Dec 30 04:31:01 kali systemd[1151]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Dec 30 04:31:01 kali systemd[1151]: Listening on ssh-agent.socket - OpenSSH Agent socket.
+Dec 30 04:31:01 kali systemd[1151]: Starting gcr-ssh-agent.socket - GCR ssh-agent wrapper...
+Dec 30 04:31:01 kali systemd[1151]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Dec 30 04:31:01 kali lightdm[1127]: gkr-pam: unlocked login keyring
+Dec 30 04:31:02 kali gpg-agent[1299]: using fd 4 for ssh socket (/run/user/1000/gnupg/S.gpg-agent.ssh)
+Dec 30 04:31:02 kali gpg-agent[1299]: listening on: std=3 extra=6 browser=5 ssh=4
+Dec 30 04:31:02 kali gpg-agent[1304]: using fd 4 for ssh socket (/run/user/1000/gnupg/S.gpg-agent.ssh)
+Dec 30 04:31:02 kali gpg-agent[1304]: listening on: std=3 extra=6 browser=5 ssh=4
+Dec 30 04:31:05 kali polkitd[581]: Registered Authentication Agent for unix-session:2 (system bus name :1.48 [/usr/libexec/polkit-mate-authentication-agent-1], object path /org/mate/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Dec 30 04:31:11 kali systemd[1027]: Closed gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Dec 30 04:31:11 kali systemd[1027]: Stopping gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Dec 30 04:31:11 kali systemd[1027]: Stopping ssh-agent.socket - OpenSSH Agent socket...
+Dec 30 04:31:11 kali systemd[1027]: Closed gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Dec 30 04:31:11 kali systemd[1027]: Closed ssh-agent.socket - OpenSSH Agent socket.
+Dec 30 04:31:11 kali systemd-logind[592]: Removed session 1.
+Dec 30 04:34:09 kali sudo[2556]: pam_unix(sudo:auth): conversation failed
+Dec 30 04:34:09 kali sudo[2556]: pam_unix(sudo:auth): auth could not identify password for [kali]
+Dec 30 04:37:15 kali sudo[4471]: pam_unix(sudo:auth): conversation failed
+Dec 30 04:37:15 kali sudo[4471]: pam_unix(sudo:auth): auth could not identify password for [kali]
+Dec 30 04:58:17 kali xfce4-screensaver-dialog[14711]: gkr-pam: unlocked login keyring
+Dec 30 05:25:19 kali systemd-logind[592]: Watching system buttons on /dev/input/event5 (VMware VMware Virtual USB Keyboard)
+Dec 30 05:34:29 kali xfce4-screensaver-dialog[31594]: gkr-pam: unlocked login keyring
+Dec 30 05:44:55 kali xfce4-screensaver-dialog[36437]: gkr-pam: unlocked login keyring
+Dec 30 06:01:14 kali xfce4-screensaver-dialog[43975]: gkr-pam: unlocked login keyring
+Dec 30 06:06:00 kali chpasswd[46458]: gkr-pam: couldn't update the login keyring password: no old password was entered
+Dec 30 06:06:17 kali systemd-logind[592]: The system will reboot now!
+Dec 30 06:06:17 kali systemd-logind[592]: System is rebooting.
+Dec 30 06:06:17 kali ssh-agent[1295]: exiting on signal 15
+Dec 30 06:06:17 kali systemd[1]: Stopped target getty.target - Login Prompts.
+Dec 30 06:06:17 kali systemd[1]: Stopped target ssh-access.target - SSH Access Available.
+Dec 30 06:06:17 kali polkitd[581]: Unregistered Authentication Agent for unix-session:2 (system bus name :1.48, object path /org/mate/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+Dec 30 06:06:17 kali systemd-logind[592]: Session 2 logged out. Waiting for processes to exit.
+Dec 30 06:06:20 kali systemd-logind[592]: Removed session 2.
+Dec 30 06:06:20 kali systemd[1151]: Closed gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Dec 30 06:06:20 kali systemd[1151]: Stopping gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Dec 30 06:06:20 kali systemd[1151]: Stopping ssh-agent.socket - OpenSSH Agent socket...
+Dec 30 06:06:20 kali systemd[1151]: Closed ssh-agent.socket - OpenSSH Agent socket.
+Dec 30 06:06:20 kali systemd[1151]: Closed gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Dec 30 06:06:20 kali systemd-logind[592]: Removed session 3.
+Dec 30 06:06:21 kali systemd[1]: Stopping systemd-logind.service - User Login Management...
+Dec 30 06:06:21 kali systemd[1]: systemd-logind.service: Deactivated successfully.
+Dec 30 06:06:21 kali systemd[1]: Stopped systemd-logind.service - User Login Management.
+Dec 30 06:06:21 kali systemd[1]: sshd-unix-local.socket: Deactivated successfully.
+Dec 30 06:06:21 kali systemd[1]: Closed sshd-unix-local.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_UNIX Local).
+Dec 30 06:06:21 kali systemd[1]: Stopping sshd-vsock.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_VSOCK)...
+Dec 30 06:06:21 kali systemd[1]: systemd-logind-varlink.socket: Deactivated successfully.
+Dec 30 06:06:21 kali systemd[1]: Closed systemd-logind-varlink.socket - User Login Management Varlink Socket.
+Dec 30 06:06:21 kali systemd[1]: sshd-vsock.socket: Deactivated successfully.
+Dec 30 06:06:21 kali systemd[1]: Closed sshd-vsock.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_VSOCK).
+Dec 30 06:06:40 kali systemd[1]: Listening on sshd-unix-local.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_UNIX Local).
+Dec 30 06:06:40 kali systemd[1]: Starting sshd-vsock.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_VSOCK)...
+Dec 30 06:06:40 kali systemd[1]: Listening on systemd-logind-varlink.socket - User Login Management Varlink Socket.
+Dec 30 06:06:40 kali systemd[1]: Listening on sshd-vsock.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_VSOCK).
+Dec 30 06:06:40 kali systemd[1]: Reached target ssh-access.target - SSH Access Available.
+Dec 30 06:06:40 kali systemd[1]: getty-static.service - getty on tty2-tty6 if dbus and logind are not available was skipped because of an unmet condition check (ConditionPathExists=!/usr/bin/dbus-daemon).
+Dec 30 06:06:40 kali systemd[1]: regenerate-ssh-host-keys.service - Regenerate SSH host keys was skipped because of an unmet condition check (ConditionPathExistsGlob=!/etc/ssh/ssh_host_*_key).
+Dec 30 06:06:40 kali systemd[1]: Starting systemd-logind.service - User Login Management...
+Dec 30 06:06:41 kali systemd-logind[573]: New seat seat0.
+Dec 30 06:06:41 kali systemd[1]: Started systemd-logind.service - User Login Management.
+Dec 30 06:06:41 kali systemd[1]: Reached target getty.target - Login Prompts.
+Dec 30 06:06:42 kali systemd-logind[573]: Watching system buttons on /dev/input/event5 (VMware VMware Virtual USB Keyboard)
+Dec 30 06:06:42 kali systemd-logind[573]: Watching system buttons on /dev/input/event0 (AT Translated Set 2 keyboard)
+Dec 30 06:06:42 kali systemd-logind[573]: Watching system buttons on /dev/input/event1 (Power Button)
+Dec 30 06:06:43 kali systemd-logind[573]: New session 'c1' of user 'lightdm' with class 'greeter' and type 'x11'.
+Dec 30 06:06:44 kali systemd-logind[573]: New session '1' of user 'lightdm' with class 'manager-early' and type 'unspecified'.
+Dec 30 06:06:44 kali systemd[797]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Dec 30 06:06:44 kali systemd[797]: Starting ssh-agent.socket - OpenSSH Agent socket...
+Dec 30 06:06:44 kali systemd[797]: Listening on ssh-agent.socket - OpenSSH Agent socket.
+Dec 30 06:06:44 kali systemd[797]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Dec 30 06:06:44 kali systemd[797]: Starting gcr-ssh-agent.socket - GCR ssh-agent wrapper...
+Dec 30 06:06:44 kali systemd[797]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Dec 30 06:06:56 kali systemd-logind[573]: Removed session c1.
+Dec 30 06:06:56 kali systemd-logind[573]: New session '2' of user 'kali' with class 'user' and type 'x11'.
+Dec 30 06:06:56 kali systemd-logind[573]: New session '3' of user 'kali' with class 'manager' and type 'unspecified'.
+Dec 30 06:06:56 kali systemd[921]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Dec 30 06:06:56 kali systemd[921]: Starting ssh-agent.socket - OpenSSH Agent socket...
+Dec 30 06:06:56 kali systemd[921]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Dec 30 06:06:56 kali systemd[921]: Starting gcr-ssh-agent.socket - GCR ssh-agent wrapper...
+Dec 30 06:06:56 kali systemd[921]: Listening on ssh-agent.socket - OpenSSH Agent socket.
+Dec 30 06:06:56 kali systemd[921]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Dec 30 06:06:56 kali lightdm[896]: gkr-pam: the password for the login keyring was invalid.
+Dec 30 06:06:56 kali gpg-agent[1069]: using fd 6 for ssh socket (/run/user/1000/gnupg/S.gpg-agent.ssh)
+Dec 30 06:06:56 kali gpg-agent[1069]: listening on: std=4 extra=3 browser=5 ssh=6
+Dec 30 06:06:57 kali gpg-agent[1074]: using fd 6 for ssh socket (/run/user/1000/gnupg/S.gpg-agent.ssh)
+Dec 30 06:06:57 kali gpg-agent[1074]: listening on: std=4 extra=3 browser=5 ssh=6
+Dec 30 06:07:01 kali polkitd[559]: Registered Authentication Agent for unix-session:2 (system bus name :1.45 [/usr/libexec/polkit-mate-authentication-agent-1], object path /org/mate/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Dec 30 06:07:06 kali systemd[797]: Closed gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Dec 30 06:07:06 kali systemd[797]: Stopping gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Dec 30 06:07:06 kali systemd[797]: Stopping ssh-agent.socket - OpenSSH Agent socket...
+Dec 30 06:07:06 kali systemd[797]: Closed gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Dec 30 06:07:06 kali systemd[797]: Closed ssh-agent.socket - OpenSSH Agent socket.
+Dec 30 06:07:06 kali systemd-logind[573]: Removed session 1.
+Dec 30 06:12:44 kali sudo[1785]: pam_unix(sudo:auth): conversation failed
+Dec 30 06:12:44 kali sudo[1785]: pam_unix(sudo:auth): auth could not identify password for [kali]
+Dec 30 06:19:05 kali xfce4-screensaver-dialog[6893]: gkr-pam: the password for the login keyring was invalid.
+Dec 30 06:19:27 kali sudo[7391]:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/whoami
+Dec 30 06:19:27 kali sudo[7391]: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+Dec 30 06:19:27 kali sudo[7391]: pam_unix(sudo:session): session closed for user root
+Dec 30 06:22:01 kali sudo[8631]:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/apt full-upgrade -y
+Dec 30 06:22:01 kali sudo[8631]: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+Dec 30 12:01:53 kali systemd[1]: Listening on systemd-logind-varlink.socket - User Login Management Varlink Socket.
+Dec 30 12:01:53 kali systemd[1]: getty-static.service - getty on tty2-tty6 if dbus and logind are not available was skipped because of an unmet condition check (ConditionPathExists=!/usr/bin/dbus-daemon).
+Dec 30 12:01:53 kali systemd[1]: regenerate-ssh-host-keys.service - Regenerate SSH host keys was skipped because of an unmet condition check (ConditionPathExistsGlob=!/etc/ssh/ssh_host_*_key).
+Dec 30 12:01:53 kali systemd[1]: Starting systemd-logind.service - User Login Management...
+Dec 30 12:01:53 kali systemd-logind[552]: New seat seat0.
+Dec 30 12:01:54 kali systemd[1]: Started systemd-logind.service - User Login Management.
+Dec 30 12:01:54 kali systemd-logind[552]: Watching system buttons on /dev/input/event1 (Power Button)
+Dec 30 12:01:54 kali systemd-logind[552]: Watching system buttons on /dev/input/event5 (VMware VMware Virtual USB Keyboard)
+Dec 30 12:01:54 kali systemd-logind[552]: Watching system buttons on /dev/input/event0 (AT Translated Set 2 keyboard)
+Dec 30 12:01:55 kali systemd[1]: Reached target getty.target - Login Prompts.
+Dec 30 12:01:57 kali systemd-logind[552]: New session 'c1' of user 'lightdm' with class 'greeter' and type 'x11'.
+Dec 30 12:01:57 kali systemd-logind[552]: New session '1' of user 'lightdm' with class 'manager-early' and type 'unspecified'.
+Dec 30 12:01:57 kali systemd[1012]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Dec 30 12:01:57 kali systemd[1012]: Starting ssh-agent.socket - OpenSSH Agent socket...
+Dec 30 12:01:58 kali systemd[1012]: Listening on ssh-agent.socket - OpenSSH Agent socket.
+Dec 30 12:01:58 kali systemd[1012]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Dec 30 12:01:58 kali systemd[1012]: Starting gcr-ssh-agent.socket - GCR ssh-agent wrapper...
+Dec 30 12:01:58 kali systemd[1012]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Dec 30 12:02:07 kali systemd-logind[552]: Removed session c1.
+Dec 30 12:02:07 kali systemd-logind[552]: New session '2' of user 'kali' with class 'user' and type 'x11'.
+Dec 30 12:02:07 kali systemd-logind[552]: New session '3' of user 'kali' with class 'manager' and type 'unspecified'.
+Dec 30 12:02:08 kali systemd[1136]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Dec 30 12:02:08 kali systemd[1136]: Starting ssh-agent.socket - OpenSSH Agent socket...
+Dec 30 12:02:08 kali systemd[1136]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Dec 30 12:02:08 kali systemd[1136]: Starting gcr-ssh-agent.socket - GCR ssh-agent wrapper...
+Dec 30 12:02:08 kali systemd[1136]: Listening on ssh-agent.socket - OpenSSH Agent socket.
+Dec 30 12:02:08 kali systemd[1136]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Dec 30 12:02:08 kali lightdm[1111]: gkr-pam: the password for the login keyring was invalid.
+Dec 30 12:02:08 kali gpg-agent[1284]: using fd 4 for ssh socket (/run/user/1000/gnupg/S.gpg-agent.ssh)
+Dec 30 12:02:08 kali gpg-agent[1284]: listening on: std=6 extra=3 browser=5 ssh=4
+Dec 30 12:02:08 kali gpg-agent[1289]: using fd 4 for ssh socket (/run/user/1000/gnupg/S.gpg-agent.ssh)
+Dec 30 12:02:08 kali gpg-agent[1289]: listening on: std=6 extra=3 browser=5 ssh=4
+Dec 30 12:02:13 kali polkitd[551]: Registered Authentication Agent for unix-session:2 (system bus name :1.45 [/usr/libexec/polkit-mate-authentication-agent-1], object path /org/mate/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Dec 30 12:02:17 kali systemd[1012]: Closed gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Dec 30 12:02:17 kali systemd[1012]: Stopping gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Dec 30 12:02:17 kali systemd[1012]: Stopping ssh-agent.socket - OpenSSH Agent socket...
+Dec 30 12:02:17 kali systemd[1012]: Closed gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Dec 30 12:02:17 kali systemd[1012]: Closed ssh-agent.socket - OpenSSH Agent socket.
+Dec 30 12:02:17 kali systemd-logind[552]: Removed session 1.
+Dec 30 12:03:15 kali sudo[2262]:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/apt full-upgrade -y
+Dec 30 12:03:15 kali sudo[2262]: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+Dec 30 12:13:52 kali (systemd-stdio-bridge)[21527]: pam_unix(login:session): session opened for user kali(uid=1000) by kali(uid=0)
+Dec 30 12:13:52 kali (sd-pam)[21529]: pam_unix(login:session): session closed for user kali
+Dec 30 12:13:52 kali (sd-pam)[21529]: pam_wtmpdb(login:session): Updating logout time failed: attempt to write a readonly database
+Dec 30 12:14:18 kali charon[23230]: 00[LIB] loaded plugins: charon aesni random nonce x509 revocation constraints pubkey pkcs1 pkcs7 dnskey sshkey pem openssl pkcs8 agent gcm drbg attr kernel-netlink resolve socket-default connmark stroke updown eap-mschapv2 xauth-generic counters
+Dec 30 12:14:19 kali ipsec[23230]: 00[LIB] loaded plugins: charon aesni random nonce x509 revocation constraints pubkey pkcs1 pkcs7 dnskey sshkey pem openssl pkcs8 agent gcm drbg attr kernel-netlink resolve socket-default connmark stroke updown eap-mschapv2 xauth-generic counters
+Dec 30 12:14:19 kali charon[23443]: 00[LIB] loaded plugins: charon aesni random nonce x509 revocation constraints pubkey pkcs1 pkcs7 dnskey sshkey pem openssl pkcs8 agent gcm drbg attr kernel-netlink resolve socket-default connmark stroke updown eap-mschapv2 xauth-generic counters
+Dec 30 12:19:14 kali sudo[2262]: pam_unix(sudo:session): session closed for user root
+Dec 30 12:32:13 kali xfce4-screensaver-dialog[54021]: gkr-pam: the password for the login keyring was invalid.
+Dec 30 12:39:10 kali xfce4-screensaver-dialog[57259]: gkr-pam: the password for the login keyring was invalid.
+Dec 30 12:40:38 kali sudo[58048]:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/apt install htop
+Dec 30 12:40:38 kali sudo[58048]: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+Dec 30 12:40:44 kali sudo[58048]: pam_unix(sudo:session): session closed for user root
+Dec 30 12:43:24 kali sudo[59488]:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/apt install -y vmware-guest-utils vmware-guest-x11
+Dec 30 12:43:24 kali sudo[59488]: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+Dec 30 12:43:26 kali sudo[59488]: pam_unix(sudo:session): session closed for user root
+Dec 30 12:51:51 kali xfce4-screensaver-dialog[63337]: gkr-pam: the password for the login keyring was invalid.
+Dec 31 04:39:24 kali systemd[1]: Listening on sshd-unix-local.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_UNIX Local).
+Dec 31 04:39:24 kali systemd[1]: Starting sshd-vsock.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_VSOCK)...
+Dec 31 04:39:24 kali systemd[1]: Listening on systemd-logind-varlink.socket - User Login Management Varlink Socket.
+Dec 31 04:39:24 kali systemd[1]: Listening on sshd-vsock.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_VSOCK).
+Dec 31 04:39:24 kali systemd[1]: Reached target ssh-access.target - SSH Access Available.
+Dec 31 04:39:24 kali systemd[1]: getty-static.service - getty on tty2-tty6 if dbus and logind are not available was skipped because of an unmet condition check (ConditionPathExists=!/usr/bin/dbus-daemon).
+Dec 31 04:39:24 kali systemd[1]: regenerate-ssh-host-keys.service - Regenerate SSH host keys was skipped because of an unmet condition check (ConditionPathExistsGlob=!/etc/ssh/ssh_host_*_key).
+Dec 31 04:39:24 kali systemd[1]: Starting systemd-logind.service - User Login Management...
+Dec 31 04:39:24 kali systemd-logind[620]: New seat seat0.
+Dec 31 04:39:25 kali systemd[1]: Started systemd-logind.service - User Login Management.
+Dec 31 04:39:26 kali systemd[1]: Reached target getty.target - Login Prompts.
+Dec 31 04:39:26 kali systemd-logind[620]: Watching system buttons on /dev/input/event0 (AT Translated Set 2 keyboard)
+Dec 31 04:39:26 kali systemd-logind[620]: Watching system buttons on /dev/input/event1 (Power Button)
+Dec 31 04:39:26 kali systemd-logind[620]: Watching system buttons on /dev/input/event5 (VMware VMware Virtual USB Keyboard)
+Dec 31 04:39:29 kali systemd-logind[620]: New session 'c1' of user 'lightdm' with class 'greeter' and type 'x11'.
+Dec 31 04:39:29 kali systemd-logind[620]: New session '1' of user 'lightdm' with class 'manager-early' and type 'unspecified'.
+Dec 31 04:39:29 kali systemd[1069]: Starting ssh-agent.socket - OpenSSH Agent socket...
+Dec 31 04:39:29 kali systemd[1069]: Listening on ssh-agent.socket - OpenSSH Agent socket.
+Dec 31 04:39:29 kali systemd[1069]: Starting gcr-ssh-agent.socket - GCR ssh-agent wrapper...
+Dec 31 04:39:29 kali systemd[1069]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Dec 31 04:39:29 kali systemd[1069]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Dec 31 04:39:29 kali systemd[1069]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Dec 31 04:39:43 kali systemd-logind[620]: Removed session c1.
+Dec 31 04:39:43 kali systemd-logind[620]: New session '2' of user 'kali' with class 'user' and type 'x11'.
+Dec 31 04:39:43 kali systemd-logind[620]: New session '3' of user 'kali' with class 'manager' and type 'unspecified'.
+Dec 31 04:39:43 kali systemd[1194]: Starting ssh-agent.socket - OpenSSH Agent socket...
+Dec 31 04:39:43 kali systemd[1194]: Listening on ssh-agent.socket - OpenSSH Agent socket.
+Dec 31 04:39:43 kali systemd[1194]: Starting gcr-ssh-agent.socket - GCR ssh-agent wrapper...
+Dec 31 04:39:43 kali systemd[1194]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Dec 31 04:39:43 kali systemd[1194]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Dec 31 04:39:43 kali systemd[1194]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Dec 31 04:39:43 kali lightdm[1170]: gkr-pam: the password for the login keyring was invalid.
+Dec 31 04:39:44 kali gpg-agent[1342]: using fd 3 for ssh socket (/run/user/1000/gnupg/S.gpg-agent.ssh)
+Dec 31 04:39:44 kali gpg-agent[1342]: listening on: std=6 extra=5 browser=4 ssh=3
+Dec 31 04:39:44 kali gpg-agent[1347]: using fd 3 for ssh socket (/run/user/1000/gnupg/S.gpg-agent.ssh)
+Dec 31 04:39:44 kali gpg-agent[1347]: listening on: std=6 extra=5 browser=4 ssh=3
+Dec 31 04:39:52 kali polkitd[567]: Registered Authentication Agent for unix-session:2 (system bus name :1.49 [/usr/libexec/polkit-mate-authentication-agent-1], object path /org/mate/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Dec 31 04:39:53 kali systemd[1069]: Stopping gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Dec 31 04:39:54 kali systemd[1069]: Closed gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Dec 31 04:39:54 kali systemd[1069]: Closed gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Dec 31 04:39:54 kali systemd[1069]: Stopping ssh-agent.socket - OpenSSH Agent socket...
+Dec 31 04:39:54 kali systemd[1069]: Closed ssh-agent.socket - OpenSSH Agent socket.
+Dec 31 04:39:54 kali systemd-logind[620]: Removed session 1.
+Dec 31 04:41:06 kali sudo[2444]:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/apt full-upgrade -y
+Dec 31 04:41:06 kali sudo[2444]: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+Dec 31 04:41:08 kali sudo[2444]: pam_unix(sudo:session): session closed for user root
+Dec 31 04:48:53 kali xfce4-screensaver-dialog[5962]: gkr-pam: the password for the login keyring was invalid.
+Dec 31 04:55:38 kali xfce4-screensaver-dialog[9186]: gkr-pam: the password for the login keyring was invalid.
+Jan 01 12:26:33 kali systemd[1]: Listening on sshd-unix-local.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_UNIX Local).
+Jan 01 12:26:33 kali systemd[1]: Starting sshd-vsock.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_VSOCK)...
+Jan 01 12:26:33 kali systemd[1]: Listening on systemd-logind-varlink.socket - User Login Management Varlink Socket.
+Jan 01 12:26:33 kali systemd[1]: Listening on sshd-vsock.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_VSOCK).
+Jan 01 12:26:33 kali systemd[1]: Reached target ssh-access.target - SSH Access Available.
+Jan 01 12:26:33 kali systemd[1]: getty-static.service - getty on tty2-tty6 if dbus and logind are not available was skipped because of an unmet condition check (ConditionPathExists=!/usr/bin/dbus-daemon).
+Jan 01 12:26:33 kali systemd[1]: regenerate-ssh-host-keys.service - Regenerate SSH host keys was skipped because of an unmet condition check (ConditionPathExistsGlob=!/etc/ssh/ssh_host_*_key).
+Jan 01 12:26:33 kali systemd[1]: Starting systemd-logind.service - User Login Management...
+Jan 01 12:26:33 kali systemd-logind[561]: New seat seat0.
+Jan 01 12:26:34 kali systemd[1]: Started systemd-logind.service - User Login Management.
+Jan 01 12:26:35 kali systemd[1]: Reached target getty.target - Login Prompts.
+Jan 01 12:26:35 kali systemd-logind[561]: Watching system buttons on /dev/input/event0 (AT Translated Set 2 keyboard)
+Jan 01 12:26:35 kali systemd-logind[561]: Watching system buttons on /dev/input/event1 (Power Button)
+Jan 01 12:26:35 kali systemd-logind[561]: Watching system buttons on /dev/input/event5 (VMware VMware Virtual USB Keyboard)
+Jan 01 12:26:37 kali systemd-logind[561]: New session 'c1' of user 'lightdm' with class 'greeter' and type 'x11'.
+Jan 01 12:26:37 kali systemd-logind[561]: New session '1' of user 'lightdm' with class 'manager-early' and type 'unspecified'.
+Jan 01 12:26:38 kali systemd[1014]: Starting ssh-agent.socket - OpenSSH Agent socket...
+Jan 01 12:26:38 kali systemd[1014]: Listening on ssh-agent.socket - OpenSSH Agent socket.
+Jan 01 12:26:38 kali systemd[1014]: Starting gcr-ssh-agent.socket - GCR ssh-agent wrapper...
+Jan 01 12:26:38 kali systemd[1014]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Jan 01 12:26:38 kali systemd[1014]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Jan 01 12:26:38 kali systemd[1014]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Jan 01 12:26:53 kali systemd-logind[561]: Removed session c1.
+Jan 01 12:26:53 kali systemd-logind[561]: New session '2' of user 'kali' with class 'user' and type 'x11'.
+Jan 01 12:26:53 kali systemd-logind[561]: New session '3' of user 'kali' with class 'manager' and type 'unspecified'.
+Jan 01 12:26:53 kali systemd[1139]: Starting ssh-agent.socket - OpenSSH Agent socket...
+Jan 01 12:26:53 kali systemd[1139]: Listening on ssh-agent.socket - OpenSSH Agent socket.
+Jan 01 12:26:53 kali systemd[1139]: Starting gcr-ssh-agent.socket - GCR ssh-agent wrapper...
+Jan 01 12:26:53 kali systemd[1139]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Jan 01 12:26:53 kali systemd[1139]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Jan 01 12:26:53 kali systemd[1139]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Jan 01 12:26:53 kali lightdm[1115]: gkr-pam: the password for the login keyring was invalid.
+Jan 01 12:26:54 kali gpg-agent[1287]: using fd 4 for ssh socket (/run/user/1000/gnupg/S.gpg-agent.ssh)
+Jan 01 12:26:54 kali gpg-agent[1287]: listening on: std=3 extra=6 browser=5 ssh=4
+Jan 01 12:26:54 kali gpg-agent[1292]: using fd 4 for ssh socket (/run/user/1000/gnupg/S.gpg-agent.ssh)
+Jan 01 12:26:54 kali gpg-agent[1292]: listening on: std=3 extra=6 browser=5 ssh=4
+Jan 01 12:26:59 kali polkitd[544]: Registered Authentication Agent for unix-session:2 (system bus name :1.45 [/usr/libexec/polkit-mate-authentication-agent-1], object path /org/mate/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Jan 01 12:27:03 kali systemd[1014]: Stopping gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Jan 01 12:27:03 kali systemd[1014]: Closed gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Jan 01 12:27:03 kali systemd[1014]: Closed gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Jan 01 12:27:03 kali systemd[1014]: Stopping ssh-agent.socket - OpenSSH Agent socket...
+Jan 01 12:27:03 kali systemd[1014]: Closed ssh-agent.socket - OpenSSH Agent socket.
+Jan 01 12:27:03 kali systemd-logind[561]: Removed session 1.
+Jan 03 03:48:31 kali systemd[1]: Listening on sshd-unix-local.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_UNIX Local).
+Jan 03 03:48:31 kali systemd[1]: Starting sshd-vsock.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_VSOCK)...
+Jan 03 03:48:31 kali systemd[1]: Listening on systemd-logind-varlink.socket - User Login Management Varlink Socket.
+Jan 03 03:48:31 kali systemd[1]: Listening on sshd-vsock.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_VSOCK).
+Jan 03 03:48:31 kali systemd[1]: Reached target ssh-access.target - SSH Access Available.
+Jan 03 03:48:31 kali systemd[1]: getty-static.service - getty on tty2-tty6 if dbus and logind are not available was skipped because of an unmet condition check (ConditionPathExists=!/usr/bin/dbus-daemon).
+Jan 03 03:48:31 kali systemd[1]: regenerate-ssh-host-keys.service - Regenerate SSH host keys was skipped because of an unmet condition check (ConditionPathExistsGlob=!/etc/ssh/ssh_host_*_key).
+Jan 03 03:48:31 kali systemd[1]: Starting systemd-logind.service - User Login Management...
+Jan 03 03:48:31 kali systemd-logind[612]: New seat seat0.
+Jan 03 03:48:31 kali systemd[1]: Started systemd-logind.service - User Login Management.
+Jan 03 03:48:33 kali systemd[1]: Reached target getty.target - Login Prompts.
+Jan 03 03:48:33 kali systemd-logind[612]: Watching system buttons on /dev/input/event0 (AT Translated Set 2 keyboard)
+Jan 03 03:48:33 kali systemd-logind[612]: Watching system buttons on /dev/input/event1 (Power Button)
+Jan 03 03:48:33 kali systemd-logind[612]: Watching system buttons on /dev/input/event5 (VMware VMware Virtual USB Keyboard)
+Jan 03 03:48:36 kali systemd-logind[612]: New session 'c1' of user 'lightdm' with class 'greeter' and type 'x11'.
+Jan 03 03:48:36 kali systemd-logind[612]: New session '1' of user 'lightdm' with class 'manager-early' and type 'unspecified'.
+Jan 03 03:48:36 kali systemd[1020]: Starting ssh-agent.socket - OpenSSH Agent socket...
+Jan 03 03:48:36 kali systemd[1020]: Listening on ssh-agent.socket - OpenSSH Agent socket.
+Jan 03 03:48:36 kali systemd[1020]: Starting gcr-ssh-agent.socket - GCR ssh-agent wrapper...
+Jan 03 03:48:36 kali systemd[1020]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Jan 03 03:48:36 kali systemd[1020]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Jan 03 03:48:36 kali systemd[1020]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Jan 03 03:48:58 kali systemd-logind[612]: Removed session c1.
+Jan 03 03:48:58 kali systemd-logind[612]: New session '2' of user 'kali' with class 'user' and type 'x11'.
+Jan 03 03:48:58 kali systemd-logind[612]: New session '3' of user 'kali' with class 'manager' and type 'unspecified'.
+Jan 03 03:48:59 kali systemd[1144]: Starting ssh-agent.socket - OpenSSH Agent socket...
+Jan 03 03:48:59 kali systemd[1144]: Listening on ssh-agent.socket - OpenSSH Agent socket.
+Jan 03 03:48:59 kali systemd[1144]: Starting gcr-ssh-agent.socket - GCR ssh-agent wrapper...
+Jan 03 03:48:59 kali systemd[1144]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Jan 03 03:48:59 kali systemd[1144]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Jan 03 03:48:59 kali systemd[1144]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Jan 03 03:48:59 kali lightdm[1120]: gkr-pam: the password for the login keyring was invalid.
+Jan 03 03:49:00 kali gpg-agent[1292]: using fd 5 for ssh socket (/run/user/1000/gnupg/S.gpg-agent.ssh)
+Jan 03 03:49:00 kali gpg-agent[1292]: listening on: std=6 extra=4 browser=3 ssh=5
+Jan 03 03:49:00 kali gpg-agent[1297]: using fd 5 for ssh socket (/run/user/1000/gnupg/S.gpg-agent.ssh)
+Jan 03 03:49:00 kali gpg-agent[1297]: listening on: std=6 extra=4 browser=3 ssh=5
+Jan 03 03:49:05 kali polkitd[605]: Registered Authentication Agent for unix-session:2 (system bus name :1.46 [/usr/libexec/polkit-mate-authentication-agent-1], object path /org/mate/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Jan 03 03:49:10 kali systemd[1020]: Stopping gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Jan 03 03:49:10 kali systemd[1020]: Closed gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Jan 03 03:49:10 kali systemd[1020]: Closed gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Jan 03 03:49:10 kali systemd[1020]: Stopping ssh-agent.socket - OpenSSH Agent socket...
+Jan 03 03:49:10 kali systemd[1020]: Closed ssh-agent.socket - OpenSSH Agent socket.
+Jan 03 03:49:10 kali systemd-logind[612]: Removed session 1.
+Jan 05 04:01:13 kali systemd[1]: Listening on sshd-unix-local.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_UNIX Local).
+Jan 05 04:01:13 kali systemd[1]: Starting sshd-vsock.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_VSOCK)...
+Jan 05 04:01:13 kali systemd[1]: Listening on systemd-logind-varlink.socket - User Login Management Varlink Socket.
+Jan 05 04:01:13 kali systemd[1]: Listening on sshd-vsock.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_VSOCK).
+Jan 05 04:01:13 kali systemd[1]: Reached target ssh-access.target - SSH Access Available.
+Jan 05 04:01:13 kali systemd[1]: getty-static.service - getty on tty2-tty6 if dbus and logind are not available was skipped because of an unmet condition check (ConditionPathExists=!/usr/bin/dbus-daemon).
+Jan 05 04:01:13 kali systemd[1]: regenerate-ssh-host-keys.service - Regenerate SSH host keys was skipped because of an unmet condition check (ConditionPathExistsGlob=!/etc/ssh/ssh_host_*_key).
+Jan 05 04:01:13 kali systemd[1]: Starting systemd-logind.service - User Login Management...
+Jan 05 04:01:14 kali systemd-logind[561]: New seat seat0.
+Jan 05 04:01:14 kali systemd[1]: Started systemd-logind.service - User Login Management.
+Jan 05 04:01:16 kali systemd-logind[561]: Watching system buttons on /dev/input/event1 (Power Button)
+Jan 05 04:01:16 kali systemd[1]: Reached target getty.target - Login Prompts.
+Jan 05 04:01:16 kali systemd-logind[561]: Watching system buttons on /dev/input/event0 (AT Translated Set 2 keyboard)
+Jan 05 04:01:16 kali systemd-logind[561]: Watching system buttons on /dev/input/event5 (VMware VMware Virtual USB Keyboard)
+Jan 05 04:01:19 kali systemd-logind[561]: New session 'c1' of user 'lightdm' with class 'greeter' and type 'x11'.
+Jan 05 04:01:19 kali systemd-logind[561]: New session '1' of user 'lightdm' with class 'manager-early' and type 'unspecified'.
+Jan 05 04:01:19 kali systemd[1008]: Starting ssh-agent.socket - OpenSSH Agent socket...
+Jan 05 04:01:19 kali systemd[1008]: Listening on ssh-agent.socket - OpenSSH Agent socket.
+Jan 05 04:01:19 kali systemd[1008]: Starting gcr-ssh-agent.socket - GCR ssh-agent wrapper...
+Jan 05 04:01:19 kali systemd[1008]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Jan 05 04:01:19 kali systemd[1008]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Jan 05 04:01:20 kali systemd[1008]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Jan 05 04:02:36 kali systemd-logind[561]: Removed session c1.
+Jan 05 04:02:36 kali systemd-logind[561]: New session '2' of user 'kali' with class 'user' and type 'x11'.
+Jan 05 04:02:36 kali systemd-logind[561]: New session '3' of user 'kali' with class 'manager' and type 'unspecified'.
+Jan 05 04:02:36 kali systemd[1191]: Starting ssh-agent.socket - OpenSSH Agent socket...
+Jan 05 04:02:36 kali systemd[1191]: Listening on ssh-agent.socket - OpenSSH Agent socket.
+Jan 05 04:02:36 kali systemd[1191]: Starting gcr-ssh-agent.socket - GCR ssh-agent wrapper...
+Jan 05 04:02:36 kali systemd[1191]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Jan 05 04:02:36 kali systemd[1191]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Jan 05 04:02:36 kali systemd[1191]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Jan 05 04:02:36 kali lightdm[1167]: gkr-pam: the password for the login keyring was invalid.
+Jan 05 04:02:37 kali gpg-agent[1339]: using fd 5 for ssh socket (/run/user/1000/gnupg/S.gpg-agent.ssh)
+Jan 05 04:02:37 kali gpg-agent[1339]: listening on: std=3 extra=4 browser=6 ssh=5
+Jan 05 04:02:37 kali gpg-agent[1344]: using fd 5 for ssh socket (/run/user/1000/gnupg/S.gpg-agent.ssh)
+Jan 05 04:02:37 kali gpg-agent[1344]: listening on: std=3 extra=4 browser=6 ssh=5
+Jan 05 04:02:42 kali polkitd[544]: Registered Authentication Agent for unix-session:2 (system bus name :1.47 [/usr/libexec/polkit-mate-authentication-agent-1], object path /org/mate/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Jan 05 04:02:46 kali systemd[1008]: Stopping gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Jan 05 04:02:46 kali systemd[1008]: Closed gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Jan 05 04:02:46 kali systemd[1008]: Closed gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Jan 05 04:02:46 kali systemd[1008]: Stopping ssh-agent.socket - OpenSSH Agent socket...
+Jan 05 04:02:46 kali systemd[1008]: Closed ssh-agent.socket - OpenSSH Agent socket.
+Jan 05 04:02:46 kali systemd-logind[561]: Removed session 1.
+Jan 07 11:24:47 kali systemd[1]: Listening on sshd-unix-local.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_UNIX Local).
+Jan 07 11:24:47 kali systemd[1]: Starting sshd-vsock.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_VSOCK)...
+Jan 07 11:24:47 kali systemd[1]: Listening on systemd-logind-varlink.socket - User Login Management Varlink Socket.
+Jan 07 11:24:47 kali systemd[1]: Listening on sshd-vsock.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_VSOCK).
+Jan 07 11:24:47 kali systemd[1]: Reached target ssh-access.target - SSH Access Available.
+Jan 07 11:24:47 kali systemd[1]: getty-static.service - getty on tty2-tty6 if dbus and logind are not available was skipped because of an unmet condition check (ConditionPathExists=!/usr/bin/dbus-daemon).
+Jan 07 11:24:47 kali systemd[1]: regenerate-ssh-host-keys.service - Regenerate SSH host keys was skipped because of an unmet condition check (ConditionPathExistsGlob=!/etc/ssh/ssh_host_*_key).
+Jan 07 11:24:47 kali systemd[1]: Starting systemd-logind.service - User Login Management...
+Jan 07 11:24:47 kali systemd-logind[553]: New seat seat0.
+Jan 07 11:24:48 kali systemd[1]: Started systemd-logind.service - User Login Management.
+Jan 07 11:24:50 kali systemd[1]: Reached target getty.target - Login Prompts.
+Jan 07 11:24:51 kali systemd-logind[553]: Watching system buttons on /dev/input/event0 (AT Translated Set 2 keyboard)
+Jan 07 11:24:51 kali systemd-logind[553]: Watching system buttons on /dev/input/event1 (Power Button)
+Jan 07 11:24:51 kali systemd-logind[553]: Watching system buttons on /dev/input/event5 (VMware VMware Virtual USB Keyboard)
+Jan 07 11:24:55 kali systemd-logind[553]: New session 'c1' of user 'lightdm' with class 'greeter' and type 'x11'.
+Jan 07 11:24:55 kali systemd-logind[553]: New session '1' of user 'lightdm' with class 'manager-early' and type 'unspecified'.
+Jan 07 11:24:55 kali systemd[1012]: Starting ssh-agent.socket - OpenSSH Agent socket...
+Jan 07 11:24:55 kali systemd[1012]: Listening on ssh-agent.socket - OpenSSH Agent socket.
+Jan 07 11:24:55 kali systemd[1012]: Starting gcr-ssh-agent.socket - GCR ssh-agent wrapper...
+Jan 07 11:24:55 kali systemd[1012]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Jan 07 11:24:55 kali systemd[1012]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Jan 07 11:24:55 kali systemd[1012]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Jan 07 11:44:11 kali systemd-logind[553]: Removed session c1.
+Jan 07 11:44:11 kali systemd-logind[553]: New session '5' of user 'kali' with class 'user' and type 'x11'.
+Jan 07 11:44:11 kali systemd-logind[553]: New session '6' of user 'kali' with class 'manager' and type 'unspecified'.
+Jan 07 11:44:11 kali systemd[1216]: Starting ssh-agent.socket - OpenSSH Agent socket...
+Jan 07 11:44:11 kali systemd[1216]: Listening on ssh-agent.socket - OpenSSH Agent socket.
+Jan 07 11:44:11 kali systemd[1216]: Starting gcr-ssh-agent.socket - GCR ssh-agent wrapper...
+Jan 07 11:44:11 kali systemd[1216]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Jan 07 11:44:11 kali systemd[1216]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Jan 07 11:44:11 kali systemd[1216]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Jan 07 11:44:11 kali lightdm[1191]: gkr-pam: the password for the login keyring was invalid.
+Jan 07 11:44:12 kali gpg-agent[1365]: using fd 5 for ssh socket (/run/user/1000/gnupg/S.gpg-agent.ssh)
+Jan 07 11:44:12 kali gpg-agent[1365]: listening on: std=4 extra=6 browser=3 ssh=5
+Jan 07 11:44:12 kali gpg-agent[1370]: using fd 5 for ssh socket (/run/user/1000/gnupg/S.gpg-agent.ssh)
+Jan 07 11:44:12 kali gpg-agent[1370]: listening on: std=4 extra=6 browser=3 ssh=5
+Jan 07 11:44:17 kali polkitd[536]: Registered Authentication Agent for unix-session:5 (system bus name :1.45 [/usr/libexec/polkit-mate-authentication-agent-1], object path /org/mate/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Jan 07 11:44:22 kali systemd[1012]: Stopping gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Jan 07 11:44:22 kali systemd[1012]: Closed gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Jan 07 11:44:22 kali systemd[1012]: Closed gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Jan 07 11:44:22 kali systemd[1012]: Stopping ssh-agent.socket - OpenSSH Agent socket...
+Jan 07 11:44:22 kali systemd[1012]: Closed ssh-agent.socket - OpenSSH Agent socket.
+Jan 07 11:44:22 kali systemd-logind[553]: Removed session 1.
+Jan 07 11:47:06 kali sudo[3306]:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/nmap -sS 192.168.15.2
+Jan 07 11:47:06 kali sudo[3306]: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+Jan 07 11:47:06 kali sudo[3306]: pam_unix(sudo:session): session closed for user root
+Jan 07 11:51:21 kali sudo[5338]:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/nmap -sT 192.168.15.2
+Jan 07 11:51:21 kali sudo[5338]: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+Jan 07 11:51:21 kali sudo[5338]: pam_unix(sudo:session): session closed for user root
+Jan 07 11:52:01 kali sudo[5727]:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/nmap -sT 192.168.15.2
+Jan 07 11:52:01 kali sudo[5727]: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+Jan 07 11:52:03 kali sudo[5727]: pam_unix(sudo:session): session closed for user root
+Jan 07 11:53:44 kali sudo[6526]:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/nmap -sS 192.168.15.2
+Jan 07 11:53:44 kali sudo[6526]: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+Jan 07 11:53:44 kali sudo[6526]: pam_unix(sudo:session): session closed for user root
+Jan 07 12:40:28 kali xfce4-screensaver-dialog[18229]: gkr-pam: the password for the login keyring was invalid.
+Jan 07 12:40:59 kali sudo[18539]:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/nmap -sS -sV 192.168.15.2
+Jan 07 12:40:59 kali sudo[18539]: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+Jan 07 12:41:06 kali sudo[18539]: pam_unix(sudo:session): session closed for user root
+Jan 07 12:41:59 kali sudo[19136]:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/nmap -sS -sV 192.168.15.2
+Jan 07 12:41:59 kali sudo[19136]: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+Jan 07 12:42:07 kali sudo[19136]: pam_unix(sudo:session): session closed for user root
+Jan 07 12:42:58 kali sudo[19624]:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/nmap -O 192.168.15.2
+Jan 07 12:42:58 kali sudo[19624]: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+Jan 07 12:43:04 kali sudo[19624]: pam_unix(sudo:session): session closed for user root
+Jan 07 12:46:16 kali sudo[21182]:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/nmap -0 192.168.1.7
+Jan 07 12:46:16 kali sudo[21182]: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+Jan 07 12:46:16 kali sudo[21182]: pam_unix(sudo:session): session closed for user root
+Jan 07 12:46:37 kali sudo[21356]:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/nmap -O 192.168.1.7
+Jan 07 12:46:37 kali sudo[21356]: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+Jan 07 12:50:19 kali sudo[21356]: pam_unix(sudo:session): session closed for user root
+Jan 08 02:42:39 kali systemd[1]: Listening on sshd-unix-local.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_UNIX Local).
+Jan 08 02:42:39 kali systemd[1]: Starting sshd-vsock.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_VSOCK)...
+Jan 08 02:42:39 kali systemd[1]: Listening on systemd-logind-varlink.socket - User Login Management Varlink Socket.
+Jan 08 02:42:39 kali systemd[1]: Listening on sshd-vsock.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_VSOCK).
+Jan 08 02:42:39 kali systemd[1]: Reached target ssh-access.target - SSH Access Available.
+Jan 08 02:42:39 kali systemd[1]: getty-static.service - getty on tty2-tty6 if dbus and logind are not available was skipped because of an unmet condition check (ConditionPathExists=!/usr/bin/dbus-daemon).
+Jan 08 02:42:39 kali systemd[1]: regenerate-ssh-host-keys.service - Regenerate SSH host keys was skipped because of an unmet condition check (ConditionPathExistsGlob=!/etc/ssh/ssh_host_*_key).
+Jan 08 02:42:39 kali systemd[1]: Starting systemd-logind.service - User Login Management...
+Jan 08 02:42:39 kali systemd-logind[561]: New seat seat0.
+Jan 08 02:42:39 kali systemd[1]: Started systemd-logind.service - User Login Management.
+Jan 08 02:42:41 kali systemd[1]: Reached target getty.target - Login Prompts.
+Jan 08 02:42:41 kali systemd-logind[561]: Watching system buttons on /dev/input/event5 (VMware VMware Virtual USB Keyboard)
+Jan 08 02:42:41 kali systemd-logind[561]: Watching system buttons on /dev/input/event0 (AT Translated Set 2 keyboard)
+Jan 08 02:42:41 kali systemd-logind[561]: Watching system buttons on /dev/input/event1 (Power Button)
+Jan 08 02:42:43 kali systemd-logind[561]: New session 'c1' of user 'lightdm' with class 'greeter' and type 'x11'.
+Jan 08 02:42:43 kali systemd-logind[561]: New session '1' of user 'lightdm' with class 'manager-early' and type 'unspecified'.
+Jan 08 02:42:44 kali systemd[1010]: Starting ssh-agent.socket - OpenSSH Agent socket...
+Jan 08 02:42:44 kali systemd[1010]: Listening on ssh-agent.socket - OpenSSH Agent socket.
+Jan 08 02:42:44 kali systemd[1010]: Starting gcr-ssh-agent.socket - GCR ssh-agent wrapper...
+Jan 08 02:42:44 kali systemd[1010]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Jan 08 02:42:44 kali systemd[1010]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Jan 08 02:42:44 kali systemd[1010]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Jan 08 02:42:58 kali systemd-logind[561]: Removed session c1.
+Jan 08 02:42:58 kali systemd-logind[561]: New session '2' of user 'kali' with class 'user' and type 'x11'.
+Jan 08 02:42:58 kali systemd-logind[561]: New session '3' of user 'kali' with class 'manager' and type 'unspecified'.
+Jan 08 02:42:58 kali systemd[1136]: Starting ssh-agent.socket - OpenSSH Agent socket...
+Jan 08 02:42:58 kali systemd[1136]: Listening on ssh-agent.socket - OpenSSH Agent socket.
+Jan 08 02:42:58 kali systemd[1136]: Starting gcr-ssh-agent.socket - GCR ssh-agent wrapper...
+Jan 08 02:42:58 kali systemd[1136]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Jan 08 02:42:58 kali systemd[1136]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Jan 08 02:42:58 kali systemd[1136]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Jan 08 02:42:58 kali lightdm[1112]: gkr-pam: the password for the login keyring was invalid.
+Jan 08 02:42:59 kali gpg-agent[1284]: using fd 3 for ssh socket (/run/user/1000/gnupg/S.gpg-agent.ssh)
+Jan 08 02:42:59 kali gpg-agent[1284]: listening on: std=4 extra=5 browser=6 ssh=3
+Jan 08 02:42:59 kali gpg-agent[1289]: using fd 3 for ssh socket (/run/user/1000/gnupg/S.gpg-agent.ssh)
+Jan 08 02:42:59 kali gpg-agent[1289]: listening on: std=4 extra=5 browser=6 ssh=3
+Jan 08 02:43:04 kali polkitd[557]: Registered Authentication Agent for unix-session:2 (system bus name :1.46 [/usr/libexec/polkit-mate-authentication-agent-1], object path /org/mate/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Jan 08 02:43:08 kali systemd[1010]: Stopping gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Jan 08 02:43:08 kali systemd[1010]: Closed gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Jan 08 02:43:08 kali systemd[1010]: Closed gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Jan 08 02:43:08 kali systemd[1010]: Stopping ssh-agent.socket - OpenSSH Agent socket...
+Jan 08 02:43:08 kali systemd[1010]: Closed ssh-agent.socket - OpenSSH Agent socket.
+Jan 08 02:43:08 kali systemd-logind[561]: Removed session 1.
+Jan 08 03:03:39 kali sudo[11651]:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/nmap -sS 192.168.15.2
+Jan 08 03:03:39 kali sudo[11651]: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+Jan 08 03:03:39 kali sudo[11651]: pam_unix(sudo:session): session closed for user root
+Jan 08 03:14:21 kali systemd-logind[561]: Watching system buttons on /dev/input/event5 (VMware VMware Virtual USB Keyboard)
+Jan 10 11:33:08 kali systemd[1]: Listening on systemd-logind-varlink.socket - User Login Management Varlink Socket.
+Jan 10 11:33:08 kali systemd[1]: getty-static.service - getty on tty2-tty6 if dbus and logind are not available was skipped because of an unmet condition check (ConditionPathExists=!/usr/bin/dbus-daemon).
+Jan 10 11:33:08 kali systemd[1]: regenerate-ssh-host-keys.service - Regenerate SSH host keys was skipped because of an unmet condition check (ConditionPathExistsGlob=!/etc/ssh/ssh_host_*_key).
+Jan 10 11:33:08 kali systemd[1]: Starting systemd-logind.service - User Login Management...
+Jan 10 11:33:08 kali systemd-logind[564]: New seat seat0.
+Jan 10 11:33:09 kali systemd[1]: Started systemd-logind.service - User Login Management.
+Jan 10 11:33:10 kali systemd[1]: Reached target getty.target - Login Prompts.
+Jan 10 11:33:10 kali systemd-logind[564]: Watching system buttons on /dev/input/event1 (Power Button)
+Jan 10 11:33:10 kali systemd-logind[564]: Watching system buttons on /dev/input/event5 (VMware VMware Virtual USB Keyboard)
+Jan 10 11:33:10 kali systemd-logind[564]: Watching system buttons on /dev/input/event0 (AT Translated Set 2 keyboard)
+Jan 10 11:33:13 kali systemd-logind[564]: New session 'c1' of user 'lightdm' with class 'greeter' and type 'x11'.
+Jan 10 11:33:13 kali systemd-logind[564]: New session '1' of user 'lightdm' with class 'manager-early' and type 'unspecified'.
+Jan 10 11:33:13 kali systemd[1011]: Starting ssh-agent.socket - OpenSSH Agent socket...
+Jan 10 11:33:13 kali systemd[1011]: Listening on ssh-agent.socket - OpenSSH Agent socket.
+Jan 10 11:33:13 kali systemd[1011]: Starting gcr-ssh-agent.socket - GCR ssh-agent wrapper...
+Jan 10 11:33:13 kali systemd[1011]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Jan 10 11:33:13 kali systemd[1011]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Jan 10 11:33:13 kali systemd[1011]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Jan 10 11:55:15 kali lightdm[1197]: pam_unix(lightdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost=
+Jan 10 11:55:22 kali lightdm[1200]: pam_unix(lightdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost=
+Jan 10 11:55:32 kali lightdm[1204]: pam_unix(lightdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost=
+Jan 10 11:55:40 kali lightdm[1206]: pam_unix(lightdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost=
+Jan 10 11:55:48 kali lightdm[1208]: pam_unix(lightdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost=
+Jan 10 11:56:00 kali systemd-logind[564]: The system will reboot now!
+Jan 10 11:56:00 kali systemd-logind[564]: System is rebooting.
+Jan 10 11:56:00 kali systemd[1]: Stopped target getty.target - Login Prompts.
+Jan 10 11:56:00 kali systemd-logind[564]: Removed session c1.
+Jan 10 11:56:00 kali systemd[1011]: Stopping gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Jan 10 11:56:00 kali systemd[1011]: Closed gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Jan 10 11:56:00 kali systemd[1011]: Closed gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Jan 10 11:56:00 kali systemd[1011]: Stopping ssh-agent.socket - OpenSSH Agent socket...
+Jan 10 11:56:00 kali systemd[1011]: Closed ssh-agent.socket - OpenSSH Agent socket.
+Jan 10 11:56:00 kali systemd-logind[564]: Removed session 1.
+Jan 10 11:56:00 kali systemd[1]: Stopping systemd-logind.service - User Login Management...
+Jan 10 11:56:01 kali systemd[1]: systemd-logind.service: Deactivated successfully.
+Jan 10 11:56:01 kali systemd[1]: Stopped systemd-logind.service - User Login Management.
+Jan 10 11:56:01 kali systemd[1]: systemd-logind-varlink.socket: Deactivated successfully.
+Jan 10 11:56:01 kali systemd[1]: Closed systemd-logind-varlink.socket - User Login Management Varlink Socket.
+Jan 10 11:56:20 kali systemd[1]: Listening on sshd-unix-local.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_UNIX Local).
+Jan 10 11:56:20 kali systemd[1]: Starting sshd-vsock.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_VSOCK)...
+Jan 10 11:56:20 kali systemd[1]: Listening on systemd-logind-varlink.socket - User Login Management Varlink Socket.
+Jan 10 11:56:20 kali systemd[1]: Listening on sshd-vsock.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_VSOCK).
+Jan 10 11:56:20 kali systemd[1]: Reached target ssh-access.target - SSH Access Available.
+Jan 10 11:56:20 kali systemd[1]: getty-static.service - getty on tty2-tty6 if dbus and logind are not available was skipped because of an unmet condition check (ConditionPathExists=!/usr/bin/dbus-daemon).
+Jan 10 11:56:20 kali systemd[1]: regenerate-ssh-host-keys.service - Regenerate SSH host keys was skipped because of an unmet condition check (ConditionPathExistsGlob=!/etc/ssh/ssh_host_*_key).
+Jan 10 11:56:20 kali systemd[1]: Starting systemd-logind.service - User Login Management...
+Jan 10 11:56:21 kali systemd-logind[558]: New seat seat0.
+Jan 10 11:56:21 kali systemd[1]: Started systemd-logind.service - User Login Management.
+Jan 10 11:56:23 kali systemd[1]: Reached target getty.target - Login Prompts.
+Jan 10 11:56:23 kali systemd-logind[558]: Watching system buttons on /dev/input/event1 (Power Button)
+Jan 10 11:56:23 kali systemd-logind[558]: Watching system buttons on /dev/input/event0 (AT Translated Set 2 keyboard)
+Jan 10 11:56:23 kali systemd-logind[558]: Watching system buttons on /dev/input/event5 (VMware VMware Virtual USB Keyboard)
+Jan 10 11:56:25 kali systemd-logind[558]: New session 'c1' of user 'lightdm' with class 'greeter' and type 'x11'.
+Jan 10 11:56:25 kali systemd-logind[558]: New session '1' of user 'lightdm' with class 'manager-early' and type 'unspecified'.
+Jan 10 11:56:25 kali systemd[958]: Starting ssh-agent.socket - OpenSSH Agent socket...
+Jan 10 11:56:26 kali systemd[958]: Listening on ssh-agent.socket - OpenSSH Agent socket.
+Jan 10 11:56:26 kali systemd[958]: Starting gcr-ssh-agent.socket - GCR ssh-agent wrapper...
+Jan 10 11:56:26 kali systemd[958]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Jan 10 11:56:26 kali systemd[958]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Jan 10 11:56:26 kali systemd[958]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Jan 10 11:56:35 kali systemd-logind[558]: Removed session c1.
+Jan 10 11:56:35 kali systemd-logind[558]: New session '2' of user 'kali' with class 'user' and type 'x11'.
+Jan 10 11:56:35 kali systemd-logind[558]: New session '3' of user 'kali' with class 'manager' and type 'unspecified'.
+Jan 10 11:56:35 kali systemd[1084]: Starting ssh-agent.socket - OpenSSH Agent socket...
+Jan 10 11:56:36 kali systemd[1084]: Listening on ssh-agent.socket - OpenSSH Agent socket.
+Jan 10 11:56:36 kali systemd[1084]: Starting gcr-ssh-agent.socket - GCR ssh-agent wrapper...
+Jan 10 11:56:36 kali systemd[1084]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Jan 10 11:56:36 kali systemd[1084]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Jan 10 11:56:36 kali systemd[1084]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Jan 10 11:56:36 kali lightdm[1059]: gkr-pam: the password for the login keyring was invalid.
+Jan 10 11:56:36 kali gpg-agent[1232]: using fd 3 for ssh socket (/run/user/1000/gnupg/S.gpg-agent.ssh)
+Jan 10 11:56:36 kali gpg-agent[1232]: listening on: std=5 extra=4 browser=6 ssh=3
+Jan 10 11:56:36 kali gpg-agent[1237]: using fd 3 for ssh socket (/run/user/1000/gnupg/S.gpg-agent.ssh)
+Jan 10 11:56:36 kali gpg-agent[1237]: listening on: std=5 extra=4 browser=6 ssh=3
+Jan 10 11:56:41 kali polkitd[543]: Registered Authentication Agent for unix-session:2 (system bus name :1.45 [/usr/libexec/polkit-mate-authentication-agent-1], object path /org/mate/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Jan 10 11:56:45 kali systemd[958]: Stopping gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Jan 10 11:56:46 kali systemd[958]: Closed gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Jan 10 11:56:46 kali systemd[958]: Closed gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Jan 10 11:56:46 kali systemd[958]: Stopping ssh-agent.socket - OpenSSH Agent socket...
+Jan 10 11:56:46 kali systemd[958]: Closed ssh-agent.socket - OpenSSH Agent socket.
+Jan 10 11:56:46 kali systemd-logind[558]: Removed session 1.
+Jan 10 11:57:44 kali sudo[2157]: pam_unix(sudo:auth): conversation failed
+Jan 10 11:57:44 kali sudo[2157]: pam_unix(sudo:auth): auth could not identify password for [kali]
+Jan 10 11:58:12 kali sudo[2435]:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/tail -n 100 /var/log/syslog
+Jan 10 11:58:12 kali sudo[2435]: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+Jan 10 11:58:12 kali sudo[2435]: pam_unix(sudo:session): session closed for user root
+Jan 10 11:58:12 kali sudo[2473]:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/tail -n 100 /var/log/auth.log
+Jan 10 11:58:12 kali sudo[2473]: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+Jan 10 11:58:12 kali sudo[2473]: pam_unix(sudo:session): session closed for user root
+Jan 10 12:04:17 kali sudo[5313]:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/journalctl -n 100
+Jan 10 12:04:17 kali sudo[5313]: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+Jan 10 12:07:05 kali sudo[6638]:     kali : TTY=pts/2 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/journalctl _SYSTEMD_UNIT=ssh.service
+Jan 10 12:07:05 kali sudo[6638]: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+Jan 10 12:07:05 kali sudo[6638]: pam_unix(sudo:session): session closed for user root
+Jan 10 12:07:56 kali sudo[7108]:     kali : TTY=pts/2 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/journalctl
+Jan 10 12:07:56 kali sudo[7108]: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+Jan 10 12:07:57 kali sudo[7108]: pam_unix(sudo:session): session closed for user root
+Jan 10 12:09:44 kali sudo[8040]:     kali : TTY=pts/3 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/journalctl
+Jan 10 12:09:44 kali sudo[8040]: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+Jan 10 12:09:44 kali sudo[8040]: pam_unix(sudo:session): session closed for user root
+Jan 10 12:10:53 kali sudo[8635]:     kali : TTY=pts/3 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/journalctl -b
+Jan 10 12:10:53 kali sudo[8635]: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+Jan 10 12:13:04 kali sudo[9657]:     kali : TTY=pts/2 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/journalctl -n 200
+Jan 10 12:13:04 kali sudo[9657]: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+Jan 10 12:13:04 kali sudo[9657]: pam_unix(sudo:session): session closed for user root
+Jan 10 12:23:13 kali sudo[8635]: pam_unix(sudo:session): session closed for user root
+Jan 10 12:24:06 kali sudo[14828]:     kali : TTY=pts/2 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/journalctl -n 500
+Jan 10 12:24:06 kali sudo[14828]: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+Jan 10 12:24:06 kali sudo[14828]: pam_unix(sudo:session): session closed for user root
+Jan 10 12:24:29 kali sudo[15073]:     kali : TTY=pts/2 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/journalctl -n 500
+Jan 10 12:24:29 kali sudo[15073]: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+Jan 10 12:25:46 kali sudo[5313]: pam_unix(sudo:session): session closed for user root
+Jan 10 12:26:18 kali sudo[15919]:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/journalctl
+Jan 10 12:26:18 kali sudo[15919]: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)

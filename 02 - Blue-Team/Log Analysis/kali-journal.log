@@ -1,0 +1,200 @@
+Jan 10 11:56:36 kali gpg-agent[1237]: using fd 5 for std socket (/run/user/1000/gnupg/S.gpg-agent)
+Jan 10 11:56:36 kali gpg-agent[1237]: using fd 6 for browser socket (/run/user/1000/gnupg/S.gpg-agent.browser)
+Jan 10 11:56:36 kali gpg-agent[1237]: listening on: std=5 extra=4 browser=6 ssh=3
+Jan 10 11:56:38 kali dbus-daemon[1106]: [session uid=1000 pid=1106 pidfd=5] Activating via systemd: service name='org.gtk.vfs.Daemon' unit='gvfs-daemon.service' requested by ':1.24' (uid=1000 pid=1247 comm="xfwm4" label="unconfined")
+Jan 10 11:56:38 kali systemd[1084]: Starting gvfs-daemon.service - Virtual filesystem service...
+Jan 10 11:56:38 kali dbus-daemon[1106]: [session uid=1000 pid=1106 pidfd=5] Successfully activated service 'org.gtk.vfs.Daemon'
+Jan 10 11:56:38 kali systemd[1084]: Started gvfs-daemon.service - Virtual filesystem service.
+Jan 10 11:56:39 kali dbus-daemon[1106]: [session uid=1000 pid=1106 pidfd=5] Activating via systemd: service name='ca.desrt.dconf' unit='dconf.service' requested by ':1.27' (uid=1000 pid=1277 comm="xfsettingsd" label="unconfined")
+Jan 10 11:56:39 kali systemd[1084]: Starting dconf.service - User preferences database...
+Jan 10 11:56:39 kali dbus-daemon[1106]: [session uid=1000 pid=1106 pidfd=5] Successfully activated service 'ca.desrt.dconf'
+Jan 10 11:56:39 kali systemd[1084]: Started dconf.service - User preferences database.
+Jan 10 11:56:40 kali dbus-daemon[540]: [system] Activating via systemd: service name='org.freedesktop.UPower' unit='upower.service' requested by ':1.43' (uid=1000 pid=1315 comm="/usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0" label="unconfined")
+Jan 10 11:56:40 kali systemd[1]: Starting upower.service - Daemon for power management...
+Jan 10 11:56:40 kali dbus-daemon[1106]: [session uid=1000 pid=1106 pidfd=5] Activating via systemd: service name='org.xfce.Notifyd' unit='xfce4-notifyd.service' requested by ':1.35' (uid=1000 pid=1314 comm="/usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0" label="unconfined")
+Jan 10 11:56:40 kali systemd[1084]: Starting xfce4-notifyd.service - XFCE notifications service...
+Jan 10 11:56:40 kali dbus-daemon[1106]: [session uid=1000 pid=1106 pidfd=5] Successfully activated service 'org.xfce.Notifyd'
+Jan 10 11:56:40 kali systemd[1084]: Started xfce4-notifyd.service - XFCE notifications service.
+Jan 10 11:56:40 kali dbus-daemon[540]: [system] Successfully activated service 'org.freedesktop.UPower'
+Jan 10 11:56:40 kali systemd[1]: Started upower.service - Daemon for power management.
+Jan 10 11:56:40 kali dbus-daemon[1106]: [session uid=1000 pid=1106 pidfd=5] Activating via systemd: service name='org.freedesktop.thumbnails.Thumbnailer1' unit='tumblerd.service' requested by ':1.31' (uid=1000 pid=1300 comm="xfdesktop" label="unconfined")
+Jan 10 11:56:40 kali systemd[1084]: Starting tumblerd.service - Thumbnailing service...
+Jan 10 11:56:41 kali systemd[1]: Started pcscd.service - PC/SC Smart Card Daemon.
+Jan 10 11:56:41 kali polkitd[543]: Registered Authentication Agent for unix-session:2 (system bus name :1.45 [/usr/libexec/polkit-mate-authentication-agent-1], object path /org/mate/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Jan 10 11:56:41 kali dbus-daemon[540]: [system] Activating via systemd: service name='org.freedesktop.ColorManager' unit='colord.service' requested by ':1.47' (uid=1000 pid=1392 comm="xiccd" label="unconfined")
+Jan 10 11:56:41 kali systemd[1]: Starting colord.service - Manage, Install and Generate Color Profiles...
+Jan 10 11:56:41 kali colord[1427]: failed to get edid data: EDID length is too small
+Jan 10 11:56:41 kali dbus-daemon[540]: [system] Successfully activated service 'org.freedesktop.ColorManager'
+Jan 10 11:56:41 kali systemd[1]: Started colord.service - Manage, Install and Generate Color Profiles.
+Jan 10 11:56:41 kali NetworkManager[618]: <info>  [1768064201.7920] agent-manager: agent[89f0baf6b32b5b73,:1.53/org.freedesktop.nm-applet/1000]: agent registered
+Jan 10 11:56:43 kali dbus-daemon[540]: [system] Activating via systemd: service name='org.freedesktop.Avahi' unit='dbus-org.freedesktop.Avahi.service' requested by ':1.56' (uid=985 pid=1553 comm="/usr/libexec/colord-sane" label="unconfined")
+Jan 10 11:56:43 kali dbus-daemon[540]: [system] Activation via systemd failed for unit 'dbus-org.freedesktop.Avahi.service': Unit dbus-org.freedesktop.Avahi.service not found.
+Jan 10 11:56:43 kali dbus-daemon[540]: [system] Activating via systemd: service name='org.freedesktop.Avahi' unit='dbus-org.freedesktop.Avahi.service' requested by ':1.57' (uid=985 pid=1553 comm="/usr/libexec/colord-sane" label="unconfined")
+Jan 10 11:56:43 kali dbus-daemon[540]: [system] Activation via systemd failed for unit 'dbus-org.freedesktop.Avahi.service': Unit dbus-org.freedesktop.Avahi.service not found.
+Jan 10 11:56:43 kali dbus-daemon[1106]: [session uid=1000 pid=1106 pidfd=5] Activating via systemd: service name='org.bluez.obex' unit='obex.service' requested by ':1.53' (uid=1000 pid=1382 comm="/usr/bin/python3 /usr/bin/blueman-applet" label="unconfined")
+Jan 10 11:56:43 kali dbus-daemon[540]: [system] Activating via systemd: service name='org.bluez' unit='dbus-org.bluez.service' requested by ':1.58' (uid=1000 pid=1382 comm="/usr/bin/python3 /usr/bin/blueman-applet" label="unconfined")
+Jan 10 11:56:43 kali dbus-daemon[540]: [system] Activation via systemd failed for unit 'dbus-org.bluez.service': Unit dbus-org.bluez.service not found.
+Jan 10 11:56:43 kali systemd[1084]: Starting obex.service - Bluetooth OBEX service...
+Jan 10 11:56:43 kali dbus-daemon[1106]: [session uid=1000 pid=1106 pidfd=5] Activating via systemd: service name='org.gtk.vfs.UDisks2VolumeMonitor' unit='gvfs-udisks2-volume-monitor.service' requested by ':1.42' (uid=1000 pid=1387 comm="/usr/lib/x86_64-linux-gnu/tumbler-1/tumblerd" label="unconfined")
+Jan 10 11:56:43 kali systemd[1084]: Starting gvfs-udisks2-volume-monitor.service - Virtual filesystem service - disk device monitor...
+Jan 10 11:56:43 kali dbus-daemon[540]: [system] Activating via systemd: service name='org.freedesktop.UDisks2' unit='udisks2.service' requested by ':1.59' (uid=1000 pid=1581 comm="/usr/libexec/gvfs-udisks2-volume-monitor" label="unconfined")
+Jan 10 11:56:43 kali systemd[1]: Starting udisks2.service - Disk Manager...
+Jan 10 11:56:43 kali obexd[1580]: OBEX daemon 5.84
+Jan 10 11:56:43 kali dbus-daemon[1106]: [session uid=1000 pid=1106 pidfd=5] Successfully activated service 'org.bluez.obex'
+Jan 10 11:56:43 kali systemd[1084]: Started obex.service - Bluetooth OBEX service.
+Jan 10 11:56:43 kali dbus-daemon[1106]: [session uid=1000 pid=1106 pidfd=5] Activating via systemd: service name='org.gnome.evolution.dataserver.Sources5' unit='evolution-source-registry.service' requested by ':1.56' (uid=1000 pid=1580 comm="/usr/libexec/bluetooth/obexd" label="unconfined")
+Jan 10 11:56:43 kali dbus-daemon[1106]: [session uid=1000 pid=1106 pidfd=5] Activation via systemd failed for unit 'evolution-source-registry.service': Unit evolution-source-registry.service not found.
+Jan 10 11:56:43 kali obexd[1580]: Unable to acquire registry: Error calling StartServiceByName for org.gnome.evolution.dataserver.Sources5: Unit evolution-source-registry.service not found.
+Jan 10 11:56:43 kali dbus-daemon[1106]: [session uid=1000 pid=1106 pidfd=5] Activating via systemd: service name='org.gnome.evolution.dataserver.Sources5' unit='evolution-source-registry.service' requested by ':1.56' (uid=1000 pid=1580 comm="/usr/libexec/bluetooth/obexd" label="unconfined")
+Jan 10 11:56:43 kali dbus-daemon[1106]: [session uid=1000 pid=1106 pidfd=5] Activation via systemd failed for unit 'evolution-source-registry.service': Unit evolution-source-registry.service not found.
+Jan 10 11:56:43 kali obexd[1580]: Unable to acquire registry: Error calling StartServiceByName for org.gnome.evolution.dataserver.Sources5: Unit evolution-source-registry.service not found.
+Jan 10 11:56:43 kali dbus-daemon[540]: [system] Successfully activated service 'org.freedesktop.UDisks2'
+Jan 10 11:56:43 kali systemd[1]: Started udisks2.service - Disk Manager.
+Jan 10 11:56:43 kali dbus-daemon[1106]: [session uid=1000 pid=1106 pidfd=5] Successfully activated service 'org.gtk.vfs.UDisks2VolumeMonitor'
+Jan 10 11:56:43 kali systemd[1084]: Started gvfs-udisks2-volume-monitor.service - Virtual filesystem service - disk device monitor.
+Jan 10 11:56:43 kali dbus-daemon[1106]: [session uid=1000 pid=1106 pidfd=5] Activating via systemd: service name='org.gtk.vfs.GPhoto2VolumeMonitor' unit='gvfs-gphoto2-volume-monitor.service' requested by ':1.42' (uid=1000 pid=1387 comm="/usr/lib/x86_64-linux-gnu/tumbler-1/tumblerd" label="unconfined")
+Jan 10 11:56:43 kali systemd[1084]: Starting gvfs-gphoto2-volume-monitor.service - Virtual filesystem service - digital camera monitor...
+Jan 10 11:56:43 kali dbus-daemon[1106]: [session uid=1000 pid=1106 pidfd=5] Successfully activated service 'org.gtk.vfs.GPhoto2VolumeMonitor'
+Jan 10 11:56:43 kali systemd[1084]: Started gvfs-gphoto2-volume-monitor.service - Virtual filesystem service - digital camera monitor.
+Jan 10 11:56:43 kali dbus-daemon[1106]: [session uid=1000 pid=1106 pidfd=5] Activating via systemd: service name='org.gtk.vfs.GoaVolumeMonitor' unit='gvfs-goa-volume-monitor.service' requested by ':1.42' (uid=1000 pid=1387 comm="/usr/lib/x86_64-linux-gnu/tumbler-1/tumblerd" label="unconfined")
+Jan 10 11:56:43 kali systemd[1084]: Starting gvfs-goa-volume-monitor.service - Virtual filesystem service - GNOME Online Accounts monitor...
+Jan 10 11:56:43 kali dbus-daemon[1106]: [session uid=1000 pid=1106 pidfd=5] Successfully activated service 'org.gtk.vfs.GoaVolumeMonitor'
+Jan 10 11:56:43 kali systemd[1084]: Started gvfs-goa-volume-monitor.service - Virtual filesystem service - GNOME Online Accounts monitor.
+Jan 10 11:56:43 kali dbus-daemon[1106]: [session uid=1000 pid=1106 pidfd=5] Activating via systemd: service name='org.gtk.vfs.AfcVolumeMonitor' unit='gvfs-afc-volume-monitor.service' requested by ':1.42' (uid=1000 pid=1387 comm="/usr/lib/x86_64-linux-gnu/tumbler-1/tumblerd" label="unconfined")
+Jan 10 11:56:43 kali systemd[1084]: Starting gvfs-afc-volume-monitor.service - Virtual filesystem service - Apple File Conduit monitor...
+Jan 10 11:56:43 kali dbus-daemon[1106]: [session uid=1000 pid=1106 pidfd=5] Successfully activated service 'org.gtk.vfs.AfcVolumeMonitor'
+Jan 10 11:56:43 kali systemd[1084]: Started gvfs-afc-volume-monitor.service - Virtual filesystem service - Apple File Conduit monitor.
+Jan 10 11:56:43 kali dbus-daemon[1106]: [session uid=1000 pid=1106 pidfd=5] Activating via systemd: service name='org.gtk.vfs.MTPVolumeMonitor' unit='gvfs-mtp-volume-monitor.service' requested by ':1.42' (uid=1000 pid=1387 comm="/usr/lib/x86_64-linux-gnu/tumbler-1/tumblerd" label="unconfined")
+Jan 10 11:56:43 kali systemd[1084]: Starting gvfs-mtp-volume-monitor.service - Virtual filesystem service - Media Transfer Protocol monitor...
+Jan 10 11:56:44 kali dbus-daemon[1106]: [session uid=1000 pid=1106 pidfd=5] Successfully activated service 'org.gtk.vfs.MTPVolumeMonitor'
+Jan 10 11:56:44 kali systemd[1084]: Started gvfs-mtp-volume-monitor.service - Virtual filesystem service - Media Transfer Protocol monitor.
+Jan 10 11:56:44 kali dbus-daemon[1106]: [session uid=1000 pid=1106 pidfd=5] Successfully activated service 'org.freedesktop.thumbnails.Thumbnailer1'
+Jan 10 11:56:44 kali systemd[1084]: Started tumblerd.service - Thumbnailing service.
+Jan 10 11:56:44 kali dbus-daemon[1106]: [session uid=1000 pid=1106 pidfd=5] Activating via systemd: service name='org.gtk.vfs.Metadata' unit='gvfs-metadata.service' requested by ':1.31' (uid=1000 pid=1300 comm="xfdesktop" label="unconfined")
+Jan 10 11:56:44 kali systemd[1084]: Starting gvfs-metadata.service - Virtual filesystem metadata service...
+Jan 10 11:56:44 kali dbus-daemon[1106]: [session uid=1000 pid=1106 pidfd=5] Successfully activated service 'org.gtk.vfs.Metadata'
+Jan 10 11:56:44 kali systemd[1084]: Started gvfs-metadata.service - Virtual filesystem metadata service.
+Jan 10 11:56:45 kali systemd[1]: Stopping user@109.service - User Manager for UID 109...
+Jan 10 11:56:45 kali systemd[958]: Activating special unit exit.target...
+Jan 10 11:56:45 kali systemd[958]: Stopped target default.target - Main User Target.
+Jan 10 11:56:45 kali systemd[958]: Stopped target sound.target - Sound Card.
+Jan 10 11:56:45 kali systemd[958]: Stopping at-spi-dbus-bus.service - Accessibility services bus...
+Jan 10 11:56:45 kali systemd[958]: Stopping filter-chain.service - PipeWire filter chain daemon...
+Jan 10 11:56:45 kali systemd[958]: Stopping gvfs-daemon.service - Virtual filesystem service...
+Jan 10 11:56:45 kali systemd[958]: Stopping pipewire-pulse.service - PipeWire PulseAudio...
+Jan 10 11:56:45 kali systemd[958]: Stopped filter-chain.service - PipeWire filter chain daemon.
+Jan 10 11:56:45 kali systemd[958]: Stopped at-spi-dbus-bus.service - Accessibility services bus.
+Jan 10 11:56:45 kali systemd[1]: run-user-109-gvfs.mount: Deactivated successfully.
+Jan 10 11:56:45 kali systemd[958]: Stopped pipewire-pulse.service - PipeWire PulseAudio.
+Jan 10 11:56:45 kali systemd[958]: Stopping wireplumber.service - Multimedia Service Session Manager...
+Jan 10 11:56:45 kali systemd[958]: Stopped gvfs-daemon.service - Virtual filesystem service.
+Jan 10 11:56:45 kali systemd[958]: Stopped wireplumber.service - Multimedia Service Session Manager.
+Jan 10 11:56:45 kali systemd[958]: Stopping dbus.service - D-Bus User Message Bus...
+Jan 10 11:56:45 kali systemd[958]: Stopping pipewire.service - PipeWire Multimedia Service...
+Jan 10 11:56:45 kali systemd[958]: Stopped dbus.service - D-Bus User Message Bus.
+Jan 10 11:56:45 kali systemd[958]: Stopped pipewire.service - PipeWire Multimedia Service.
+Jan 10 11:56:45 kali systemd[958]: Removed slice session.slice - User Core Session Slice.
+Jan 10 11:56:45 kali systemd[958]: Stopped target basic.target - Basic System.
+Jan 10 11:56:45 kali systemd[958]: Stopped target paths.target - Paths.
+Jan 10 11:56:45 kali systemd[958]: Stopped target sockets.target - Sockets.
+Jan 10 11:56:45 kali systemd[958]: Stopped target timers.target - Timers.
+Jan 10 11:56:45 kali systemd[958]: Closed dbus.socket - D-Bus User Message Bus Socket.
+Jan 10 11:56:45 kali systemd[958]: Closed dirmngr.socket - GnuPG network certificate management daemon.
+Jan 10 11:56:45 kali systemd[958]: Closed gnome-keyring-daemon.socket - GNOME Keyring daemon.
+Jan 10 11:56:45 kali systemd[958]: Closed gpg-agent-browser.socket - GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jan 10 11:56:45 kali systemd[958]: Closed gpg-agent-extra.socket - GnuPG cryptographic agent and passphrase cache (restricted).
+Jan 10 11:56:45 kali systemd[958]: Stopping gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Jan 10 11:56:45 kali systemd[958]: Stopping gpg-agent.socket - GnuPG cryptographic agent and passphrase cache...
+Jan 10 11:56:45 kali systemd[958]: Closed keyboxd.socket - GnuPG public key management service.
+Jan 10 11:56:45 kali systemd[958]: Closed pipewire-pulse.socket - PipeWire PulseAudio.
+Jan 10 11:56:45 kali systemd[958]: Closed pipewire.socket - PipeWire Multimedia System Sockets.
+Jan 10 11:56:45 kali systemd[958]: Closed speech-dispatcher.socket - Speech Dispatcher Socket.
+Jan 10 11:56:45 kali systemd[958]: Closed systemd-ask-password.socket - Query the User Interactively for a Password.
+Jan 10 11:56:46 kali systemd[958]: Closed gpg-agent.socket - GnuPG cryptographic agent and passphrase cache.
+Jan 10 11:56:46 kali systemd[958]: Closed gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Jan 10 11:56:46 kali systemd[958]: Closed gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Jan 10 11:56:46 kali systemd[958]: Stopping ssh-agent.socket - OpenSSH Agent socket...
+Jan 10 11:56:46 kali systemd[958]: Closed ssh-agent.socket - OpenSSH Agent socket.
+Jan 10 11:56:46 kali systemd[958]: Removed slice app.slice - User Application Slice.
+Jan 10 11:56:46 kali systemd[958]: Reached target shutdown.target - Shutdown.
+Jan 10 11:56:46 kali systemd[958]: Finished systemd-exit.service - Exit the Session.
+Jan 10 11:56:46 kali systemd[958]: Reached target exit.target - Exit the Session.
+Jan 10 11:56:46 kali systemd-logind[558]: Removed session 1.
+Jan 10 11:56:46 kali systemd[1]: user@109.service: Deactivated successfully.
+Jan 10 11:56:46 kali systemd[1]: Stopped user@109.service - User Manager for UID 109.
+Jan 10 11:56:46 kali systemd[1]: user@109.service: Consumed 1.246s CPU time over 20.457s wall clock time, 48.7M memory peak.
+Jan 10 11:56:46 kali systemd[1]: Stopping user-runtime-dir@109.service - User Runtime Directory /run/user/109...
+Jan 10 11:56:46 kali systemd[1]: run-user-109.mount: Deactivated successfully.
+Jan 10 11:56:46 kali systemd[1]: user-runtime-dir@109.service: Deactivated successfully.
+Jan 10 11:56:46 kali systemd[1]: Stopped user-runtime-dir@109.service - User Runtime Directory /run/user/109.
+Jan 10 11:56:46 kali systemd[1]: Removed slice user-109.slice - User Slice of UID 109.
+Jan 10 11:56:46 kali systemd[1]: user-109.slice: Consumed 2.121s CPU time over 20.613s wall clock time, 120.5M memory peak.
+Jan 10 11:56:51 kali systemd-timesyncd[385]: Contacted time server 13.126.27.131:123 (2.debian.pool.ntp.org).
+Jan 10 11:56:51 kali systemd-timesyncd[385]: Initial clock synchronization to Sat 2026-01-10 11:56:51.109435 EST.
+Jan 10 11:56:52 kali systemd[1]: systemd-hostnamed.service: Deactivated successfully.
+Jan 10 11:57:10 kali dbus-daemon[1106]: [session uid=1000 pid=1106 pidfd=5] Activating via systemd: service name='org.freedesktop.portal.Desktop' unit='xdg-desktop-portal.service' requested by ':1.67' (uid=1000 pid=1899 comm="/usr/bin/qterminal" label="unconfined")
+Jan 10 11:57:10 kali systemd[1084]: Starting xdg-desktop-portal.service - Portal service...
+Jan 10 11:57:10 kali dbus-daemon[1106]: [session uid=1000 pid=1106 pidfd=5] Activating via systemd: service name='org.freedesktop.impl.portal.PermissionStore' unit='xdg-permission-store.service' requested by ':1.68' (uid=1000 pid=1901 comm="/usr/libexec/xdg-desktop-portal" label="unconfined")
+Jan 10 11:57:10 kali systemd[1084]: Starting xdg-permission-store.service - sandboxed app permission store...
+Jan 10 11:57:10 kali dbus-daemon[1106]: [session uid=1000 pid=1106 pidfd=5] Successfully activated service 'org.freedesktop.impl.portal.PermissionStore'
+Jan 10 11:57:10 kali systemd[1084]: Started xdg-permission-store.service - sandboxed app permission store.
+Jan 10 11:57:10 kali dbus-daemon[1106]: [session uid=1000 pid=1106 pidfd=5] Activating via systemd: service name='org.freedesktop.portal.Documents' unit='xdg-document-portal.service' requested by ':1.68' (uid=1000 pid=1901 comm="/usr/libexec/xdg-desktop-portal" label="unconfined")
+Jan 10 11:57:10 kali systemd[1084]: Starting xdg-document-portal.service - flatpak document portal service...
+Jan 10 11:57:10 kali dbus-daemon[1106]: [session uid=1000 pid=1106 pidfd=5] Successfully activated service 'org.freedesktop.portal.Documents'
+Jan 10 11:57:10 kali systemd[1084]: Started xdg-document-portal.service - flatpak document portal service.
+Jan 10 11:57:10 kali dbus-daemon[1106]: [session uid=1000 pid=1106 pidfd=5] Activating via systemd: service name='org.freedesktop.impl.portal.desktop.gtk' unit='xdg-desktop-portal-gtk.service' requested by ':1.68' (uid=1000 pid=1901 comm="/usr/libexec/xdg-desktop-portal" label="unconfined")
+Jan 10 11:57:10 kali systemd[1084]: Starting xdg-desktop-portal-gtk.service - Portal service (GTK/GNOME implementation)...
+Jan 10 11:57:10 kali dbus-daemon[1106]: [session uid=1000 pid=1106 pidfd=5] Successfully activated service 'org.freedesktop.impl.portal.desktop.gtk'
+Jan 10 11:57:10 kali systemd[1084]: Started xdg-desktop-portal-gtk.service - Portal service (GTK/GNOME implementation).
+Jan 10 11:57:10 kali rtkit-daemon[988]: Supervising 6 threads of 3 processes of 1 users.
+Jan 10 11:57:10 kali rtkit-daemon[988]: Supervising 6 threads of 3 processes of 1 users.
+Jan 10 11:57:10 kali rtkit-daemon[988]: Supervising 6 threads of 3 processes of 1 users.
+Jan 10 11:57:10 kali rtkit-daemon[988]: Supervising 6 threads of 3 processes of 1 users.
+Jan 10 11:57:10 kali rtkit-daemon[988]: Supervising 6 threads of 3 processes of 1 users.
+Jan 10 11:57:10 kali rtkit-daemon[988]: Supervising 6 threads of 3 processes of 1 users.
+Jan 10 11:57:10 kali dbus-daemon[1106]: [session uid=1000 pid=1106 pidfd=5] Successfully activated service 'org.freedesktop.portal.Desktop'
+Jan 10 11:57:10 kali systemd[1084]: Started xdg-desktop-portal.service - Portal service.
+Jan 10 11:57:43 kali systemd[1]: pcscd.service: Deactivated successfully.
+Jan 10 11:57:44 kali sudo[2157]: pam_unix(sudo:auth): conversation failed
+Jan 10 11:57:44 kali sudo[2157]: pam_unix(sudo:auth): auth could not identify password for [kali]
+Jan 10 11:58:12 kali sudo[2435]:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/tail -n 100 /var/log/syslog
+Jan 10 11:58:12 kali sudo[2435]: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+Jan 10 11:58:12 kali sudo[2435]: pam_unix(sudo:session): session closed for user root
+Jan 10 11:58:12 kali sudo[2473]:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/tail -n 100 /var/log/auth.log
+Jan 10 11:58:12 kali sudo[2473]: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+Jan 10 11:58:12 kali sudo[2473]: pam_unix(sudo:session): session closed for user root
+Jan 10 12:03:46 kali systemd[1084]: tumblerd.service: Consumed 1.670s CPU time over 6min 47.162s wall clock time, 130.2M memory peak.
+Jan 10 12:04:17 kali sudo[5313]:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/journalctl -n 100
+Jan 10 12:04:17 kali sudo[5313]: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+Jan 10 12:05:04 kali CRON[5712]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Jan 10 12:05:04 kali CRON[5714]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jan 10 12:05:04 kali CRON[5712]: pam_unix(cron:session): session closed for user root
+Jan 10 12:07:05 kali sudo[6638]:     kali : TTY=pts/2 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/journalctl _SYSTEMD_UNIT=ssh.service
+Jan 10 12:07:05 kali sudo[6638]: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+Jan 10 12:07:05 kali sudo[6638]: pam_unix(sudo:session): session closed for user root
+Jan 10 12:07:56 kali sudo[7108]:     kali : TTY=pts/2 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/journalctl
+Jan 10 12:07:56 kali sudo[7108]: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+Jan 10 12:07:57 kali sudo[7108]: pam_unix(sudo:session): session closed for user root
+Jan 10 12:09:04 kali systemd[1]: Starting phpsessionclean.service - Clean php session files...
+Jan 10 12:09:04 kali CRON[7692]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Jan 10 12:09:04 kali CRON[7694]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+Jan 10 12:09:04 kali CRON[7692]: pam_unix(cron:session): session closed for user root
+Jan 10 12:09:04 kali systemd[1]: phpsessionclean.service: Deactivated successfully.
+Jan 10 12:09:04 kali systemd[1]: Finished phpsessionclean.service - Clean php session files.
+Jan 10 12:09:44 kali sudo[8040]:     kali : TTY=pts/3 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/journalctl
+Jan 10 12:09:44 kali sudo[8040]: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+Jan 10 12:09:44 kali sudo[8040]: pam_unix(sudo:session): session closed for user root
+Jan 10 12:10:53 kali sudo[8635]:     kali : TTY=pts/3 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/journalctl -b
+Jan 10 12:10:53 kali sudo[8635]: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+Jan 10 12:11:59 kali systemd[1]: Starting systemd-tmpfiles-clean.service - Cleanup of Temporary Directories...
+Jan 10 12:11:59 kali systemd-tmpfiles[9144]: /usr/lib/tmpfiles.d/legacy.conf:14: Duplicate line for path "/run/lock", ignoring.
+Jan 10 12:11:59 kali systemd[1]: systemd-tmpfiles-clean.service: Deactivated successfully.
+Jan 10 12:11:59 kali systemd[1]: Finished systemd-tmpfiles-clean.service - Cleanup of Temporary Directories.
+Jan 10 12:12:04 kali NetworkManager[618]: <info>  [1768065124.9046] dhcp4 (eth0): state changed new lease, address=192.168.15.129
+Jan 10 12:12:04 kali dbus-daemon[540]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.5' (uid=0 pid=618 comm="/usr/sbin/NetworkManager --no-daemon" label="unconfined")
+Jan 10 12:12:04 kali systemd[1]: Starting NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service...
+Jan 10 12:12:04 kali dbus-daemon[540]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Jan 10 12:12:04 kali systemd[1]: Started NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service.
+Jan 10 12:12:14 kali systemd[1]: NetworkManager-dispatcher.service: Deactivated successfully.
+Jan 10 12:13:04 kali sudo[9657]:     kali : TTY=pts/2 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/journalctl -n 200
+Jan 10 12:13:04 kali sudo[9657]: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
