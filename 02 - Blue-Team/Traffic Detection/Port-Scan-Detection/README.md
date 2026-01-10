@@ -38,8 +38,10 @@ To compare normal network traffic with port scanning traffic and identify indica
 
 ---
 
-## Example Detection Logic
-Alert when a single host sends TCP SYN packets to more than 10 unique destination ports within 60 seconds without completing handshakes.
+## Detection Logic
+IF host sends > 10 SYN attempts to unique destination ports within 60 seconds 
+AND <20% of those complete handshake
+THEN flag as “Potential Network Scan”
 
 ---
 
