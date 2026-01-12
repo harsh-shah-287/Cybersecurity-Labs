@@ -35,7 +35,7 @@ This lab builds foundational SOC skills in:
 
 Logs were exported from the systemd journal since Kali does not generate traditional `/var/log/syslog` or `/var/log/auth.log` by default.
 
----
+
 
 ## Log Collection Commands
 
@@ -43,14 +43,18 @@ Logs were exported from the systemd journal since Kali does not generate traditi
 - `sudo journalctl -n 500 > kali-syslog.log`
 - `sudo journalctl | grep -Ei "sudo|ssh|login|authentication" > kali-auth.log`
 
+---
+
 ## Analysis Performed :
 
-# Authentication Activity Review
+### Authentication Activity Review
 - `grep -Ei "sudo|ssh|login" kali-auth.log`
 - Reviewed privileged command usage and login activity.
 
-# Activity aligned with legitimate administrative actions.
+### Activity aligned with legitimate administrative actions.
 - No suspicious authentication patterns detected.
+
+---
 
 ## System Errors and Warnings
 - `grep -Ei "error|failed|warning" kali-syslog.log`
@@ -61,6 +65,8 @@ Logs were exported from the systemd journal since Kali does not generate traditi
 - `grep -Ei "network|eth0|dhcp|dns" kali-syslog.log`
 - Observed DHCP lease renewals and interface activity.
 - Events aligned with packet capture timing.
+
+---
 
 ## Time-Based Correlation
 - Windows system operated in IST while Kali operated in EST.
@@ -83,6 +89,8 @@ Logs were exported from the systemd journal since Kali does not generate traditi
 |03:03|Nmap scan executed|
 |03:03|Packet capture stopped|
 |03:14|Network interface reconnected|
+
+---
 
 ## Detection Perspective
 Logs validate attacker actions and timelines.
