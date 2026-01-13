@@ -1,0 +1,15 @@
+title: Potential Nmap Scan Detected
+id: 001-nmap-scan
+status: experimental
+description: Detects potential port scanning activity based on multiple SYN attempts.
+author: Harsh Shah
+logsource:
+  category: network
+detection:
+  selection:
+    tcp.flags: SYN
+  condition: selection
+falsepositives:
+  - Vulnerability scanners
+  - Network monitoring systems
+level: medium
