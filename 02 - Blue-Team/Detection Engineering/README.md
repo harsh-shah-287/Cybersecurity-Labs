@@ -113,13 +113,15 @@ By completing this lab, the following skills were developed:
 
 ---
 
-## Future Enhancements
+## Detection Maturity Progression
 
-- Add threshold-based logic to the Sigma rule.  
-- Convert Sigma rule into SIEM-native queries.  
-- Validate detection using replayed traffic datasets.  
-- Correlate detection with endpoint and authentication logs.  
-- Expand detection coverage to additional techniques.  
+This lab evolved from:
+
+- Single-signal threshold detection
+→ Multi-signal correlation
+→ Metrics-driven tuning
+→ Kernel-level telemetry integration
+→ Detection architecture modeling
 
 ---
 

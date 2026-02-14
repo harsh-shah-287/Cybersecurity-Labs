@@ -1,6 +1,4 @@
-# Detection Metrics – SYN Scan Telemetry (Day 11)
-
----
+# Detection Metrics – SYN Scan Telemetry 
 
 ## Capture Reference
 
@@ -98,6 +96,19 @@ Initial threshold candidates derived from telemetry:
 - SYN packet volume: 500 SYN Packets within 60 seconds.
 - Destination port Diversity: 100 unique ports
 - Sustained Packet Rate: 10 packets per sec.
+
+---
+## Operational Detection Metrics
+
+To evaluate detection effectiveness in production environments:
+
+| Metric | Description |
+|--------|-------------|
+| Alert Volume | Number of alerts generated per day |
+| False Positive Rate | % of alerts closed as benign |
+| Mean Time to Detection (MTTD) | Time from activity to alert |
+| Mean Time to Response (MTTR) | Time from alert to resolution |
+| Signal-to-Noise Ratio | True alerts vs total alerts |
 
 ---
 

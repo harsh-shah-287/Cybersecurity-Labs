@@ -136,6 +136,22 @@ Mitigation strategies:
 
 ---
 
+## Low-and-Slow Scan Detection Strategy
+
+Attackers may evade burst-based thresholds by:
+
+- Spreading SYN packets across longer time windows
+- Reducing packet rate below threshold
+- Targeting smaller port sets over hours
+
+Mitigation Approach:
+
+- Monitor cumulative unique ports over 6-hour window.
+- Alert if >150 unique ports contacted within extended window.
+- Track abnormal deviation from historical host baseline.
+
+---
+
 ## Tuning Strategy
 
 Thresholds should be:

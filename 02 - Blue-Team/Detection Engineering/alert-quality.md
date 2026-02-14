@@ -136,6 +136,19 @@ Alert quality improves through:
 
 ---
 
+## Signal Weighting Model
+
+Assign weighted confidence scores:
+
+- Network scan only: 40%
+- Privileged execution only: 30%
+- Network + privileged execution: 80%
+- Network + privileged execution + auditd confirmation: 95%
+
+Composite detection significantly increases fidelity.
+
+---
+
 ## Analyst Notes
 
 - Detection quality directly impacts SOC effectiveness.

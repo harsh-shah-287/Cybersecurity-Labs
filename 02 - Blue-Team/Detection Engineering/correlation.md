@@ -1,5 +1,4 @@
-# Detection Correlation Logic – Network and Endpoint Telemetry (Day 11)
-
+# Detection Correlation Logic – Network and Endpoint Telemetry 
 ---
 
 ## Objective
@@ -145,6 +144,17 @@ Future correlation expansion may include:
 - DNS telemetry
 - Authentication failures
 - User behavior analytics
+
+---
+
+## Enhanced Endpoint Correlation (Auditd)
+
+New Telemetry Source:
+- auditd execve monitoring
+
+Additional Correlation Logic:
+
+If : `Network SYN scan detected` and `audit.key = exec_monitor event contains suspicious binary (nmap, nc, curl) Within ±5 minutes THEN escalate alert to Critical.`
 
 ---
 
